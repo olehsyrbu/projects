@@ -1,0 +1,48 @@
+.App {
+  text-align: left;
+}
+
+.App h1, .App h2 {
+  padding: 20px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.center-form{
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+a {
+  text-decoration: none;
+}
+
+.row-flex{
+   display: flex;
+}
+
+.fakeProgress {
+  margin: 7.5px 0 15px 0;
+  height: 4px;
+}
+
+.tableDetail {
+  padding: 20px;
+}
+.tableDetail div {
+  color: #082d3ec7;
+}
+.tableDetail  span{
+  color: #000000;
+  font-weight: bold;
+}

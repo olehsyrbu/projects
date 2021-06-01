@@ -1,0 +1,122 @@
+.comments {
+    background-color: #f7f7f7;
+    padding: 56px 0 76px;
+    overflow: hidden;
+    &__list {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        //transform: translateX(-51%);
+    }
+    &__item {
+        width: calc(50% - 16px);
+        min-width: calc(50% - 16px);
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+        border: 1px solid rgba(34,34,34,0.1);
+        border-radius: 4px;
+        background-color: #FFFFFF;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0;
+        p {
+            width: 100%;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        &.active {
+            animation: translateRight .5s ease-out forwards;
+            &:nth-child(2) {
+                animation: translateLeft .5s ease-out forwards;
+            }
+        }
+    }
+    &__photo {
+        background-size: contain;
+        background-color: #f7f7f7;
+        width: 56px;
+        height: 56px;
+        margin-right: 16px;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+    }
+    &__name {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+    }
+    &__org {
+        img {
+            max-width: 63px;
+            max-height: 25px;
+            margin-right: 16px;
+        }
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        color: rgba(#222, .4);
+    }
+}
+
+
+@media screen and (max-width: $mob) {
+    .comments {
+        padding: 32px 0 48px;
+        &__list {
+            margin-top: 24px;
+            transform: none;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 100%;
+            padding: 32px 24px;
+            &:not(:last-child) {
+                margin-bottom: 16px;
+                margin-right: 0;
+            }
+            //&:first-child {
+            //    display: none;
+            //}
+            //&:last-child {
+            //    display: none;
+            //}
+            min-width: 100%;
+            margin-right: 32px;
+            p {
+                font-size: 16px;
+                margin-top: 24px;
+            }
+        }
+        &__photo {
+            width: 48px;
+            height: 48px;
+            margin-right: 8px;
+        }
+        &__name {
+            margin-bottom: 0;
+        }
+        &__org {
+            img {
+                max-height: 23px;
+                margin-right: auto;
+            }
+            span {
+                display: block;
+                width: 100%;
+                margin-bottom: 4px;
+            }
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+        &__txt {
+            max-width: calc(100% - 60px);
+        }
+    }
+}

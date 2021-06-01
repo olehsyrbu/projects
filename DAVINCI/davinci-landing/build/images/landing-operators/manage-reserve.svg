@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="112px" viewBox="0 0 128 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>C25E918E-D230-4B8F-AD84-4CDEFB964797</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing_davinci_FOR-TOUR-OPERATORS" transform="translate(-104.000000, -1306.000000)">
+            <g id="Manage-reservations" transform="translate(104.000000, 1306.000000)">
+                <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="128" height="112"></rect>
+                <g id="Group" transform="translate(8.000000, 5.000000)">
+                    <path d="M11,2 C6.02943725,2 2,6.02943725 2,11 L2,79 C2,83.9705627 6.02943725,88 11,88 L101,88 C105.970563,88 110,83.9705627 110,79 L110,11 C110,6.02943725 105.970563,2 101,2 L11,2 Z M11,0 L101,0 C107.075132,-1.11598369e-15 112,4.92486775 112,11 L112,79 C112,85.0751322 107.075132,90 101,90 L11,90 C4.92486775,90 7.43989126e-16,85.0751322 0,79 L0,11 C-7.43989126e-16,4.92486775 4.92486775,1.11598369e-15 11,0 Z" id="Rectangle" fill="#05B9E6" fill-rule="nonzero"></path>
+                    <path d="M94.3112909,29.2924958 C94.7020346,28.9021911 95.3351995,28.9025471 95.7255042,29.2932909 C96.1158089,29.6840346 96.1154529,30.3171995 95.7247091,30.7075042 L79.7067091,46.7075042 C79.3161207,47.0976537 78.6832623,47.0974758 78.2928932,46.7071068 L72.2928932,40.7071068 C71.9023689,40.3165825 71.9023689,39.6834175 72.2928932,39.2928932 C72.6834175,38.9023689 73.3165825,38.9023689 73.7071068,39.2928932 L79.0003974,44.5861838 L94.3112909,29.2924958 Z" id="Path" fill="#3DBAE4" fill-rule="nonzero"></path>
+                    <g id="Group-19" transform="translate(12.000000, 17.000000)" fill="#05B9E6" fill-rule="nonzero">
+                        <path d="M2,36 L2,45 L11,45 L11,36 L2,36 Z M0,34 L13,34 L13,47 L0,47 L0,34 Z" id="Rectangle"></path>
+                        <path d="M13,13 L13,45 L22,45 L22,13 L13,13 Z M11,11 L24,11 L24,47 L11,47 L11,11 Z" id="Rectangle-Copy-5"></path>
+                        <path d="M24,25 L24,45 L33,45 L33,25 L24,25 Z M22,23 L35,23 L35,47 L22,47 L22,23 Z" id="Rectangle-Copy-6"></path>
+                        <path d="M35,2 L35,45 L44,45 L44,2 L35,2 Z M33,0 L46,0 L46,47 L33,47 L33,0 Z" id="Rectangle-Copy-7"></path>
+                    </g>
+                    <rect id="Rectangle" fill="#05B9E6" x="2" y="76" width="108" height="2"></rect>
+                    <rect id="Rectangle-Copy" fill="#05B9E6" x="22" y="100" width="70" height="2"></rect>
+                    <rect id="Rectangle-Copy" fill="#05B9E6" transform="translate(39.000000, 95.500000) scale(1, -1) translate(-39.000000, -95.500000) " x="38" y="90" width="2" height="11"></rect>
+                    <rect id="Rectangle-Copy-4" fill="#05B9E6" transform="translate(75.000000, 95.500000) scale(1, -1) translate(-75.000000, -95.500000) " x="74" y="90" width="2" height="11"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

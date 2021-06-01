@@ -1,0 +1,251 @@
+@keyframes scaleOut {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleOutFade {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(.8);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(1.2) translate(-10%, -10%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes translateLeft {
+    from {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes translateRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes translateUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes translateUpReverse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes translateDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes translateLeftInherit {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: .1;
+    }
+}
+@keyframes translateDownMin {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes skewC1 {
+    from {
+        opacity: 0;
+        transform: scale(.8) skewY(-19deg);
+    }
+    to {
+        opacity: 1;
+        transform: skewY(19deg);
+    }
+}
+@keyframes skewC2 {
+    from {
+        opacity: 0;
+        transform: scale(.7) skewY(-15deg);
+    }
+    to {
+        opacity: 1;
+        transform: skewY(15deg);
+    }
+}
+@keyframes skewC3 {
+    from {
+        opacity: 0;
+        transform: scale(.6) skewY(-11deg);
+    }
+    to {
+        opacity: 1;
+        transform: skewY(11deg);
+    }
+}
+
+@keyframes aboutPopin {
+    0% {
+        opacity: 0;
+        transform: scale(.5) skewY(5deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(.7) skewX(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes skewC1a {
+    from {
+        opacity: 0;
+        transform: scale(.8) skewY(8deg);
+    }
+    to {
+        opacity: 1;
+        transform: skewY(-8deg);
+        top: 50px;
+        left: 34px;
+    }
+}
+@keyframes skewC2a {
+    from {
+        opacity: 0;
+        transform: scale(.7) skewX(-15deg);
+        top: 25px;
+        left: 10px;
+    }
+    to {
+        opacity: 1;
+        transform: skewX(-7deg);
+        top: 25px;
+        left: 10px;
+    }
+}
+@keyframes skewC3a {
+    from {
+        transform: scale(.7) skewY(5deg);
+        top: 10px;
+        left: 120px;
+    }
+    to {
+        transform: skewY(5deg);
+        top: 10px;
+        left: 120px;
+    }
+}
+
+
+@keyframes skewC1m {
+
+    50% {
+        opacity: 1;
+        transform: skewY(5deg) rotate(360deg) scale(1.05);
+        top: 10px;
+        left: 120px;
+    }
+}
+@keyframes skewC2m {
+    50% {
+        opacity: 1;
+        transform: skewY(5deg) rotate(360deg) scale(1.05);
+        top: -20px;
+        left: 80px;
+    }
+}
+@keyframes skewC3m {
+    50% {
+        opacity: 1;
+        transform: skewY(5deg) rotate(360deg) scale(1.05);
+        top: -40px;
+        left: 40px;
+    }
+}
+
+@keyframes scaleTY {
+    from {
+        transform: translateY(50%);
+    }
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes backgroundPosition {
+
+    50% {
+        opacity: 1;
+        transform: scale(1) skewX(-2deg);
+    }
+
+}
+
+@keyframes drawDash {
+    from {
+        stroke-dashoffset: 2700;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}

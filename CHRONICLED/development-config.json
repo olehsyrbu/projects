@@ -1,0 +1,178 @@
+{
+  "NODE_ENV": "development",
+  "LOG_LEVEL": "debug",
+  "SERVER_NAME": "ChronicledServer",
+
+  "HOSTNAME": "develop.chronicled.com",
+  "PROTOCOL": "http",
+  "PORT": "8080",
+
+  "MONGODB_URI": "mongodb://app:6z03G6smqJkq@ds025766-a0.mlab.com:25766,ds025766-a1.mlab.com:25766/develop?replicaSet=rs-ds025766",
+
+  "PUBLIC_KEY": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tDQpNSUlDK0RDQ0FlQ2dBd0lCQWdJSlp0cktiaGZxYy9SRE1BMEdDU3FHU0liM0RRRUJCUVVBTUNNeElUQWZCZ05WDQpCQU1UR0dOb2NtOXVhV05zWldRdFpHVjJMbUYxZEdnd0xtTnZiVEFlRncweE5qQTNNRFl4T0RJNU1qVmFGdzB6DQpNREF6TVRVeE9ESTVNalZhTUNNeElUQWZCZ05WQkFNVEdHTm9jbTl1YVdOc1pXUXRaR1YyTG1GMWRHZ3dMbU52DQpiVENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFMd09uaTF5aWw5ZlM0R2ppZHkwDQo5V29uN0lQRWd3cjFwTm9WdVllV2t1cVEvUTlUUWFoRHNZaGVNMG1aK2hCYnBmbFVnQ1ZXV2RZeUNGZFdVQzNwDQpYa0JweDhpNDRZUzJlVHBjbFJYRUJpeGtVL0IyRlZDbnhKNXA4RjR6NDJTcHFsbEJZdkR4TmEybjJ1U3p3dnEyDQpQZUlFcjNsNHU2eTVTdTZ6YjNvMkhJRjhoclJVVmFPd3dCYnpxeTVkY2dVWEYrRVdlRkNJd0NXUkNSUGFQQ3g4DQpLQXJDZTNvQ2tKVEVMMFE0cmNaRGMrMWRFRVN6eWc0a3FZRmZtU0U1M1lrVDFYSEVCQWIwZFVBT1EwR1N1UnQrDQp5T01FbU4zRHRsZmUyT1ZwYU8zamxMNEs0alQ5ZXUrRGdGL3VuYTJ3eVl5VXFFMVp6aTRpVTdYSnlzcG9ZVWpXDQo3SjhDQXdFQUFhTXZNQzB3REFZRFZSMFRCQVV3QXdFQi96QWRCZ05WSFE0RUZnUVUxMERaN3BKTVMxOXdvU1p2DQpXL1hKUElQSjNKa3dEUVlKS29aSWh2Y05BUUVGQlFBRGdnRUJBSXdJMzlHUTVWbGhwMlJFV1JlVmd2NjFoSXJyDQpld1pXYjMvZEtEcitqME1WOUR1RVpkYlJiUmZxUTJsTFB6VnBlZFI4c0xaNUNCaytQbUNHSkJHUDRpOVVaQ1FsDQpjcENtWWdSUW5QdVdLeWxza1NNL2F6MnRMSkxoR2NPeXc1aEViOTkrQVlYdkVCdzhnazhBNFJQSFpqUmNDU3hJDQp6b3RHZktCOFdFZC9xYk83SkllazdNRFE0dHMwbExDelEvUTdaQk5xVm1vTTdhTmpUQ3JhTUhhdDczTUJCZUh2DQpkNDEvTEFNaUJId0ZwVzdyZG9aWWV4aHdwdHJhRUx4YVJxK0N3NUwzRTZ5eFpkeVh3Y2lBUGlySWw1SzRpb0F0DQpFWGphTExzcnZNOXBic0xhOS9VTGdPS1BzR093NHJmaGxkUjA3bFhpOW1nTW5zeitZWis5eEVWR3c0OD0NCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0NCg==",
+
+  "AUTH0_CLIENT_ID": "6TR3fNcM5fBu6QZ81Tljc9BHmZtWTnh7",
+  "AUTH0_CLIENT_SECRET": "QGhJOecRWDkwrY8a9IKBwGN5urUQ2X69FV2pZ8v9xTd3dh7gyjFhiu-d0sYvJbWS",
+  "AUTH0_DOMAIN": "chronicled-dev.auth0.com",
+  "AUTH0_MANAGEMENT_TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJHT0F4bnBaT0tQUWc5ZHlUcjBOMmZXVE90SU8wbXdpaiIsInNjb3BlcyI6eyJ1c2VycyI6eyJhY3Rpb25zIjpbInJlYWQiLCJ1cGRhdGUiLCJkZWxldGUiLCJjcmVhdGUiXX0sInVzZXJzX2FwcF9tZXRhZGF0YSI6eyJhY3Rpb25zIjpbInJlYWQiLCJ1cGRhdGUiLCJkZWxldGUiLCJjcmVhdGUiXX0sImNsaWVudHMiOnsiYWN0aW9ucyI6WyJyZWFkIl19fSwiaWF0IjoxNDY4NDQ3ODc4LCJqdGkiOiJjMGUwYzQ0ZTE1NDU1NmIzZDYzZjQ5YzFkMzhjOTA5MyJ9.afva0aJF4hnPW6GjEBbMTh3gyBj5driU7Nap9AnkTck",
+  "AUTH0_DEFAULT_CONNECTION": "Username-Password-Authentication",
+
+  "ALGOLIA_APP_ID": "RPQ1PSWXRC",
+  "ALGOLIA_API_KEY": "01511d0810ae9c8eb2e9bfe93f523ba4",
+  "ALGOLIA_INDICES_LOCATION": "dev",
+
+  "TWILIO_ACCOUNT_SID": "AC849b7f16f016e624dd77df8a5d27ac6c",
+  "TWILIO_AUTH_TOKEN": "f0eb3c1f29cf0831aed2b86b5c452df5",
+  "TWILIO_OUTGOING_NUMBER": "+12623832367",
+
+
+  "EMAIL_FROM_NAME": "The Chronicled Team",
+  "EMAIL_FROM_EMAIL": "noreply@chronicled.com",
+
+  "ASSET_REDIRECT_URL": "http://chronicled.com/asset/#!/",
+
+  "IMGIX_SOURCES": {
+    "chronicled": "http://chronicled.imgix.net/",
+    "uploads": "http://chronicled-uploads.imgix.net/"
+  },
+
+  "AWS_ACCESS_KEY_ID": "AKIAJB2B4F2UHXW756SA",
+  "AWS_ACCESS_KEY_SECRET": "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",
+  "AWS_REGION": "us-east-1",
+
+  "CATALOG_IMAGE_UPLOAD_BUCKET": "assets.chronicled.com",
+  "CATALOG_IMAGE_UPLOAD_DIRECTORY": "catalog_images/",
+
+  "SEGMENT_WRITE_KEY": "iD03CATMhKIz578Cumo0IL7NaRJYpLox",
+
+  "LOGGLY_CUSTOMER_TOKEN": "9700237b-37ca-4e49-b7e5-3bd8bb136bb8",
+  "LOGGLY_SUBDOMAIN": "chronicled",
+
+  "DEV_KEY": "efe2a18c06ce356e0839ed72943745445ab325ce70b3cc96c71f84e627f818a4",
+  "CHRONICLED_USER_ID": "auth0|5544166ef34d12ee638aa9fe",
+
+  "KAFKA_CONNSTRING": "172.31.0.10:9092",
+
+  "SLACK_WEBHOOK_URL": "https://hooks.slack.com/services/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",
+  "DEFAULT_SLACK_CHANNEL": "ops-alerts",
+  "SLACK_EMOJI": ":chronicled:",
+
+  "BLOCKCHAIN_SETTINGS": {
+    "explorer": "http://explorer.chronicled.org",
+    "blockchain_ids": ["ethereum-mainnet", "quorum-local", "hyperledger-iot-alliance"],
+    "hyperledger-iot-alliance": {
+      "apiUrl": "http://ec2-54-219-181-242.us-west-1.compute.amazonaws.com:8082/v1/"
+    },
+    "ethereum-mainnet": {
+      "rpcUrl": "https://zdrvxp62dvu90js6uvgkjrmggk4sqp-node.ambisafe.co",
+      "params": {},
+      "contractsConfig": {
+        "registrarAddress": "0x3cf05cc5ab7746ffaab5b01012cad17995b40ef2",
+        "registryAddress": "0x0e1d92923d405153ccee2c482c582c2af74261c4",
+        "multiAccess": {
+          "defaultOwners": [
+            "0x754c50465885f1ed1fa1a55b95ee8ecf3f1f4324",
+            "0x8c83c7aa8dc003aabb817fe811f59583b3299c4f",
+            "0xaa060bd10204a1433f0f6ddba01a59c4fbaed805",
+            "0xb3a77b9100f3d19b908c0171b0f4c7f6ebe870fa"
+          ]
+        }
+      },
+      "serverAccountAddress": "0x754c50465885f1ed1fa1a55b95ee8ecf3f1f4324",
+      "keys": {
+        "0x7d88eb79d1e0589d99e6dd7c609c2f7007cca232": "af307c916486af8f481a51f410f448fbd5741c0ec2950c6d4430b4533912aaf6",
+        "0xec4db95c7e454da237defb6a3ce92b5119e93bcd": "a4fd786c2273b64237c220772131e67390fdc5938efdf6afc8f8994c37916d0e",
+        "0x94e645efe80955ec6e9ce4b365379b1a72e77ad4": "fda64ddfc4f30fae718755d5491e8ba5673c296fafea2c54e5b1577ac8ca3638",
+        "0xf95d703eb61effba64268d37b83f6695762b7f83": "6fffd683cb36f492d8df667c2d9b547d14d36fe24c65d5866ceb3a884c2b7fa0",
+        "0x732e219b2581814239d467eeb56f5da2a74fe725": "0472a4f2f7dec29de1655302b4d4a9bc5ae0b4dbf2537a6e606ac0bf4c591409",
+        "0x3110b9c9638b432092dc89fd621e11b4df0ef905": "ec0591cf12dddce04cfb64f44e071761af33dc5ed9c2d9c9879eb13c4b3fd187",
+        "0xbff76a0db2f347e2719cf878b51f24ae27374bd2": "58c1f4dfa5e5e439b8c013c936c9cd391c4f763d0d1c6573254cbe0e9cfec036",
+        "0x8e114de504772740cc9dad03cb2a016333c435d2": "d8f7683b26e70a20cf28f4ec73cbc5d09b9619d77a5cd932f7cb7441004ba459",
+        "0x131e87ba3bac39eb1761f24ce43c405c66dc76cd": "c09bceacc7c714db56e78a67c695af70ffe6f83e7241ae5d10a5c8e2e2431f33",
+        "0xb060ebe4194b2333da34b6ce4e19c8172cb01e0b": "f50ad9dc96a1971d451a46dfd5086621a7499e12d93d444a763e59bd7fb2aab1",
+        "0x754c50465885f1ed1fa1a55b95ee8ecf3f1f4324": "1f6a6450954b4508adb559c77195ac7601d7260277a784ae5e7ee68ed1001c1f",
+        "0x9d82bf3874ada4e0e961dc9e1aaa549c580a5b4a": "651ae0dad37ab9429e3786564ab6d6406e7c219cd11185ca5eaaee6b4c631e83"
+      },
+       "multiAccess": {
+         "0x7d88eb79d1e0589d99e6dd7c609c2f7007cca232": "0x90ca9c616da5e93566613091ce0b71e65b53764a",
+         "0xec4db95c7e454da237defb6a3ce92b5119e93bcd": "0x237f6cd69b1918a08514d17573b3bd6edabb7ea2",
+         "0x94e645efe80955ec6e9ce4b365379b1a72e77ad4": "0xfe7cc948a38bfd79eace846fb0f8ffa86cd35aa0",
+         "0xf95d703eb61effba64268d37b83f6695762b7f83": "0xdf07885e8ac9192ebe082a0484507da7f2829561",
+         "0x732e219b2581814239d467eeb56f5da2a74fe725": "0x1f210f6805bd4124b3d201b90a5b53b2396f1a3d",
+         "0x3110b9c9638b432092dc89fd621e11b4df0ef905": "0xc16fdf87ea9999851cf14531c209191ce32599ee",
+         "0xbff76a0db2f347e2719cf878b51f24ae27374bd2": "0x35555d15f19458d3c75a44402bd173ddff00e7b5",
+         "0x8e114de504772740cc9dad03cb2a016333c435d2": "0x2fd14996ea7a30587c5006dd45bf27fc07f0ef53",
+         "0x131e87ba3bac39eb1761f24ce43c405c66dc76cd": "0xa375774b2c5b469c39fd0092ef4fd317d3ea38a8",
+         "0xb060ebe4194b2333da34b6ce4e19c8172cb01e0b": "0xf8b6ae8610f53e5e326721679b7782d75da30ec4",
+         "0x754c50465885f1ed1fa1a55b95ee8ecf3f1f4324": "0x1911dafe4602b54c8f062ef3fcf46cdc87b81aba",
+         "0x9d82bf3874ada4e0e961dc9e1aaa549c580a5b4a": "0x0b257df41189f6a3afd7b988637b2c04f784315f"
+       },
+       "thingEvents": {
+         "startBlock": 2120810,
+         "blocksBatchSize": 500,
+         "consensusBuffer": 300
+       }
+    },
+    "quorum-local": {
+      "rpcUrl": "http://54.149.129.135:22000",
+      "params": {
+        "gasPrice": "0"
+      },
+      "contractsConfig": {
+        "registrarAddress": "0x4cf9a3890a3c5ef138d5f0bc7778b74a8bb52e18",
+        "registryAddress": "0x664ba1e828c41fb6750c5f3750a35622db7678b7",
+        "multiAccess": {
+          "defaultOwners": [
+            "0x754c50465885f1ed1fa1a55b95ee8ecf3f1f4324",
+            "0x8c83c7aa8dc003aabb817fe811f59583b3299c4f",
+            "0xaa060bd10204a1433f0f6ddba01a59c4fbaed805",
+            "0xb3a77b9100f3d19b908c0171b0f4c7f6ebe870fa"
+          ]
+        }
+      },
+      "serverAccountAddress": "0x754c50465885f1ed1fa1a55b95ee8ecf3f1f4324",
+      "keys": {
+        "0x7d88eb79d1e0589d99e6dd7c609c2f7007cca232": "af307c916486af8f481a51f410f448fbd5741c0ec2950c6d4430b4533912aaf6",
+        "0xec4db95c7e454da237defb6a3ce92b5119e93bcd": "a4fd786c2273b64237c220772131e67390fdc5938efdf6afc8f8994c37916d0e",
+        "0x94e645efe80955ec6e9ce4b365379b1a72e77ad4": "fda64ddfc4f30fae718755d5491e8ba5673c296fafea2c54e5b1577ac8ca3638",
+        "0xf95d703eb61effba64268d37b83f6695762b7f83": "6fffd683cb36f492d8df667c2d9b547d14d36fe24c65d5866ceb3a884c2b7fa0",
+        "0x732e219b2581814239d467eeb56f5da2a74fe725": "0472a4f2f7dec29de1655302b4d4a9bc5ae0b4dbf2537a6e606ac0bf4c591409",
+        "0x3110b9c9638b432092dc89fd621e11b4df0ef905": "ec0591cf12dddce04cfb64f44e071761af33dc5ed9c2d9c9879eb13c4b3fd187",
+        "0xbff76a0db2f347e2719cf878b51f24ae27374bd2": "58c1f4dfa5e5e439b8c013c936c9cd391c4f763d0d1c6573254cbe0e9cfec036",
+        "0x8e114de504772740cc9dad03cb2a016333c435d2": "d8f7683b26e70a20cf28f4ec73cbc5d09b9619d77a5cd932f7cb7441004ba459",
+        "0x131e87ba3bac39eb1761f24ce43c405c66dc76cd": "c09bceacc7c714db56e78a67c695af70ffe6f83e7241ae5d10a5c8e2e2431f33",
+        "0xb060ebe4194b2333da34b6ce4e19c8172cb01e0b": "f50ad9dc96a1971d451a46dfd5086621a7499e12d93d444a763e59bd7fb2aab1",
+        "0x754c50465885f1ed1fa1a55b95ee8ecf3f1f4324": "1f6a6450954b4508adb559c77195ac7601d7260277a784ae5e7ee68ed1001c1f",
+        "0x9d82bf3874ada4e0e961dc9e1aaa549c580a5b4a": "651ae0dad37ab9429e3786564ab6d6406e7c219cd11185ca5eaaee6b4c631e83",
+        "0xc3264e82204d41a0cc701447c39fb269565b390a": "c0611aafb27d1b424081d8aca7ad590a1cab256796d903f22af79c8e37951ce6"
+      },
+       "multiAccess": {
+         "0x7d88eb79d1e0589d99e6dd7c609c2f7007cca232": "0x90ca9c616da5e93566613091ce0b71e65b53764a",
+         "0xec4db95c7e454da237defb6a3ce92b5119e93bcd": "0x237f6cd69b1918a08514d17573b3bd6edabb7ea2",
+         "0x94e645efe80955ec6e9ce4b365379b1a72e77ad4": "0xfe7cc948a38bfd79eace846fb0f8ffa86cd35aa0",
+         "0xf95d703eb61effba64268d37b83f6695762b7f83": "0xdf07885e8ac9192ebe082a0484507da7f2829561",
+         "0x732e219b2581814239d467eeb56f5da2a74fe725": "0x1f210f6805bd4124b3d201b90a5b53b2396f1a3d",
+         "0x3110b9c9638b432092dc89fd621e11b4df0ef905": "0xc16fdf87ea9999851cf14531c209191ce32599ee",
+         "0xbff76a0db2f347e2719cf878b51f24ae27374bd2": "0x35555d15f19458d3c75a44402bd173ddff00e7b5",
+         "0x8e114de504772740cc9dad03cb2a016333c435d2": "0x2fd14996ea7a30587c5006dd45bf27fc07f0ef53",
+         "0x131e87ba3bac39eb1761f24ce43c405c66dc76cd": "0xa375774b2c5b469c39fd0092ef4fd317d3ea38a8",
+         "0xb060ebe4194b2333da34b6ce4e19c8172cb01e0b": "0xf8b6ae8610f53e5e326721679b7782d75da30ec4",
+         "0x754c50465885f1ed1fa1a55b95ee8ecf3f1f4324": "0xa174e7d6c8b2c2fcca2fd1599cb092d836d1240e",
+         "0x9d82bf3874ada4e0e961dc9e1aaa549c580a5b4a": "0x0b257df41189f6a3afd7b988637b2c04f784315f",
+         "0xc3264e82204d41a0cc701447c39fb269565b390a": "0xa174e7d6c8b2c2fcca2fd1599cb092d836d1240e"
+       },
+       "thingEvents": {
+         "startBlock": 0,
+         "blocksBatchSize": 500,
+         "consensusBuffer": 0
+       }
+    }
+  },
+
+  "AMBISAFE_SIGNING_KEY" : "5eb9c9a8-c0dd-41f6-a82c-56f8ce771c4d",
+  "PUSHER_APP_ID":"241075",
+  "PUSHER_KEY": "87e2b8869a996bce3499",
+  "PUSHER_SECRET": "7feea64849e1fc20b3ba",
+  "NHS3100_KDF_KEY": "01020304010203040102030401020304",
+  "NHS3100_AES_CBC_IV": "00000000000000000000000000000000"
+}

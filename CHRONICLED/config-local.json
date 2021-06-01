@@ -1,0 +1,8 @@
+{
+  "SERVER_URL": "https://develop.chronicled.com",
+  "PUSHER_KEY": "87e2b8869a996bce3499",
+  "AUTH0_ID": "Csl5aqWZ9LXbaGhrdmI9NjG6E1GC006f",
+  "AUTH0_DOMAIN": "chronicled-dev.auth0.com",
+  "AUTH0_SCOPES": "openid name email offline_access username chronicled_id roles",
+  "AUTH0_DB": "Username-Password-Authentication"
+}

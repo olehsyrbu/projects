@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>026F9464-CE2F-4291-916B-416A49F3ED85</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="35" y="29" width="520" height="322" rx="2"></rect>
+        <filter x="-17.3%" y="-18.6%" width="134.6%" height="155.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowSpreadOuter2" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter3"></feMorphology>
+            <feOffset dx="0" dy="16" in="shadowSpreadOuter3" result="shadowOffsetOuter3"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter3" result="shadowBlurOuter3"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="thank-U" transform="translate(-275.000000, -61.000000)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="checked-(2)" opacity="0.600000024" transform="translate(275.000000, 61.000000)" fill="#D4DCE4" fill-rule="nonzero">
+                <path d="M20,0 C8.90909091,0 0,8.90909091 0,20 C0,31.0909091 8.90909091,40 20,40 C31.0909091,40 40,31.0909091 40,20 C40,8.90909091 31.0909091,0 20,0 Z M31.5454545,13.7272727 L17,28.8181818 C16.8181818,29 16.6363636,29.0909091 16.3636364,29.0909091 C16.0909091,29.0909091 15.8181818,29 15.7272727,28.8181818 L8.63636364,21.1818182 L8.45454545,21 C8.27272727,20.8181818 8.18181818,20.5454545 8.18181818,20.3636364 C8.18181818,20.1818182 8.27272727,19.9090909 8.45454545,19.7272727 L9.72727273,18.4545455 C10.0909091,18.0909091 10.6363636,18.0909091 11,18.4545455 L11.0909091,18.5454545 L16.0909091,23.9090909 C16.2727273,24.0909091 16.5454545,24.0909091 16.7272727,23.9090909 L28.9090909,11.2727273 L29,11.2727273 C29.3636364,10.9090909 29.9090909,10.9090909 30.2727273,11.2727273 L31.5454545,12.5454545 C31.9090909,12.8181818 31.9090909,13.3636364 31.5454545,13.7272727 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

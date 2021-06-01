@@ -1,0 +1,234 @@
+.companies {
+    padding: 42px 0 82px;
+    background-color: #f7f7f7;
+    position: relative;
+    &::after {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        background: linear-gradient(to right, rgba(#f7f7f7, 1) 0%, rgba(#f7f7f7, .65) 70%,  rgba(#f7f7f7, 0) 100%);
+    }
+    &__txt {
+        margin-top: 16px;
+        p {
+            font-weight: 300;
+            color: rgba(#4D5158, .8);
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .container__half {
+        position: relative;
+        z-index: 3;
+    }
+    &__map {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 733px;
+        z-index: 0;
+        &.js-for-regions {
+            z-index: 2;
+            pointer-events: none;
+            width: 100%;
+        }
+        svg {
+            path {
+                fill: #fff;
+                stroke: rgba(#222, .1);
+                stroke-width: 1px;
+                cursor: pointer;
+                transition: fill .225s;
+                &:hover {
+                    fill: #F6A622;
+                }
+                &.active {
+                    fill: #F6A622;
+                }
+            }
+        }
+    }
+    &__map-points {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        overflow: hidden;
+    }
+}
+
+.svgmap {
+    position: absolute;
+    pointer-events: none;
+    &__block {
+        padding: 10px;
+        position: absolute;
+        width: 250px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 0 0 1px rgba(52,63,75,0.02), 0 10px 60px 0 rgba(52,63,75,0.3), 0 10px 30px 0 rgba(52,63,75,0.06);
+        left: -125px;
+        bottom: calc(100% + 22px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__triangle {
+        position: absolute;
+        bottom: -12px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 10px 0 10px;
+        border-color: #ffffff transparent transparent transparent;
+        left: calc(50% - 10px);
+    }
+
+    &__img {
+        width: 60px;
+        height: 60px;
+        background-color: #D8D8D8;
+        margin-right: 16px;
+        background-size: cover;
+    }
+
+    &__txt {
+        width: calc(100% - 76px);
+    }
+
+    &__name {
+        color: #3D4145;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.4;
+    }
+
+    &__count {
+        color: rgba(#4D5158, .8);
+        font-size: 14px;
+    }
+
+    &__locator {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background-color: transparent;
+        border: 6px solid #FFFFFF;
+        box-shadow: 0 2px 7px 0 rgba(56,87,112,0.29);
+        border-radius: 50%;
+        left: calc(50% - 11px);
+        bottom: -40px;
+        &::after,
+        &::before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(#fff, .7);
+            border-radius: 50%;
+            opacity: 0;
+            animation: scaleOutFade 2s infinite linear;
+            display: block;
+            position: absolute;
+            left: calc(50% - 25px);
+            top: calc(50% - 25px);
+            z-index: 0;
+        }
+        &::before {
+            animation-delay: 1s;
+        }
+    }
+
+    &__region {
+        position: absolute;
+        pointer-events: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: translateDownMin .25s linear forwards;
+        &.reverse {
+            animation: translateUpReverse .25s linear forwards;
+        }
+    }
+}
+
+.all-map-ct {
+    width: 100%;
+    position: absolute;
+    left: auto;
+    right: 0;
+    height: 100%;
+    top: 0;
+}
+
+@media screen and (max-width: $mob) {
+    .companies {
+        padding: 32px 0 340px;
+        overflow: hidden;
+        &::after {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 20px 70px 1px #f7f7f7;
+            transform: rotate(90deg);
+        }
+
+        &__map {
+            right: auto;
+            left: -40px;
+            top: auto;
+            bottom: 0;
+            height: 470px;
+            width: 666px;
+        }
+    }
+    .svgmap__region {
+        background-size: contain;
+        &[data-id='si'] {
+            background-size: 16px;
+        }
+        &[data-id='rs'] {
+            background-size: 25px;
+        }
+        &[data-id='ro'] {
+            background-size: 56px;
+        }
+        &[data-id='de'] {
+            background-size: 78px;
+        }
+    }
+}
+
+
+@media screen and (max-width: $mob) and (min-width: 530px) {
+    .companies {
+        &__map {
+            right: 0;
+            left: auto;
+            top: auto;
+            bottom: 0;
+            height: 675px;
+            width: 666px;
+        }
+    }
+}
+
+
+@media screen and (min-width: $mob) and (max-width: 1260px) {
+    .companies {
+        overflow: hidden;
+        &__map-svg {
+            left: auto;
+            top: auto;
+            bottom: 0;
+            right: -160px;
+        }
+    }
+}

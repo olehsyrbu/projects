@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LithiumMessageTracer</key>
+	<dict>
+		<key>LastReportedDate</key>
+		<date>2018-01-12T02:18:51Z</date>
+	</dict>
+	<key>PXPeopleScreenUnlocked</key>
+	<true/>
+	<key>Photos</key>
+	<dict>
+		<key>IPXWorkspaceControllerZoomLevelsKey</key>
+		<dict>
+			<key>kZoomLevelIdentifierAlbums</key>
+			<integer>7</integer>
+			<key>kZoomLevelIdentifierVersions</key>
+			<integer>10</integer>
+		</dict>
+		<key>PXMemoriesHasConfirmedOnboardingDefaultsKey</key>
+		<true/>
+	</dict>
+	<key>RDLegacyProxyMediaRelocationCleanupCompletedKey</key>
+	<true/>
+	<key>faces.namingflow.enabled</key>
+	<true/>
+</dict>
+</plist>

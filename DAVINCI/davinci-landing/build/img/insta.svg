@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 19</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="futer" transform="translate(-1303.000000, -403.000000)" fill-rule="nonzero">
+            <g id="Group-53" transform="translate(1303.000000, 403.000000)">
+                <g id="Group-14">
+                    <rect id="Rectangle-19" x="0" y="0" width="32" height="32"></rect>
+                    <path d="M20.5,4 L11.5,4 C7.3585,4 4,7.3585 4,11.5 L4,20.5 C4,24.6415 7.3585,28 11.5,28 L20.5,28 C24.6415,28 28,24.6415 28,20.5 L28,11.5 C28,7.3585 24.6415,4 20.5,4 Z M25.75,20.5 C25.75,23.395 23.395,25.75 20.5,25.75 L11.5,25.75 C8.605,25.75 6.25,23.395 6.25,20.5 L6.25,11.5 C6.25,8.605 8.605,6.25 11.5,6.25 L20.5,6.25 C23.395,6.25 25.75,8.605 25.75,11.5 L25.75,20.5 Z" id="Shape" fill="#FFFFFF"></path>
+                    <path d="M16,10 C12.6865,10 10,12.6865 10,16 C10,19.3135 12.6865,22 16,22 C19.3135,22 22,19.3135 22,16 C22,12.6865 19.3135,10 16,10 Z M16,19.75 C13.933,19.75 12.25,18.067 12.25,16 C12.25,13.9315 13.933,12.25 16,12.25 C18.067,12.25 19.75,13.9315 19.75,16 C19.75,18.067 18.067,19.75 16,19.75 Z" id="Shape" fill="#FFFFFF"></path>
+                    <circle id="Oval" fill="#FFFFFF" cx="22.45" cy="9.55" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

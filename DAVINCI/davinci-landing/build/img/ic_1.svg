@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing_davinci-4_1" transform="translate(-120.000000, -980.000000)">
+            <g id="Group-22" transform="translate(104.000000, 964.000000)">
+                <g id="Group-39">
+                    <g id="Group-4">
+                        <g id="baseline-hotel-24px" transform="translate(16.000000, 16.000000)">
+                            <polygon id="Shape" opacity="0.800000012" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M7,13 C8.66,13 10,11.66 10,10 C10,8.34 8.66,7 7,7 C5.34,7 4,8.34 4,10 C4,11.66 5.34,13 7,13 Z M19,7 L11,7 L11,14 L3,14 L3,5 L1,5 L1,20 L3,20 L3,17 L21,17 L21,20 L23,20 L23,11 C23,8.79 21.21,7 19,7 Z" id="Shape" fill="#222222" fill-rule="nonzero" opacity="0.600000024"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

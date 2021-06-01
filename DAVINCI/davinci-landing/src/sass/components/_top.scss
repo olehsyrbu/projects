@@ -1,0 +1,125 @@
+.top {
+    min-height: 660px;
+    background-color: #000;
+    padding-top: 80px;
+    position: relative;
+    .heading {
+        color: #fff;
+        font-size: 40px;
+        letter-spacing: -0.84px;
+        font-weight: normal;
+        margin-bottom: 25px;
+        max-width: 550px;
+        b {
+            color: #05B9E6;
+        }
+    }
+    &__centered {
+        p {
+            color: rgba(#fff, .6);
+            margin-bottom: 38px;
+            max-width: 500px;
+        }
+    }
+    &__container {
+        min-height: 460px;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__hotels {
+        padding-bottom: 30px;
+        z-index: 1;
+        position: relative;
+        p {
+            border-top: 1px solid rgba(#fff, .2);
+            padding-top: 16px;
+            font-weight: bold;
+            color: rgba(#fff, .8);
+            margin-bottom: 22px;
+        }
+        &-list {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            align-items: center;
+            img {
+                max-width: 78px;
+                max-height: 36px;
+                margin-right: 25px;
+                display: block;
+            }
+        }
+    }
+    &__video {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 0;
+        video {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            display: block;
+            z-index: 0;
+        }
+        &-mask {
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(#000, .7);
+        }
+    }
+}
+
+@media screen and (max-width: $mob) {
+    .top {
+        min-height: 100vh;
+        padding-top: 64px;
+        .heading {
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: -0.67px;
+            margin-bottom: 16px;
+            max-width: 100%;
+        }
+        &__centered {
+            p {
+                margin-bottom: 38px;
+                line-height: 24px;
+            }
+        }
+        &__container {
+            min-height: calc(100vh - 175px);
+        }
+        &__hotels {
+            padding: 0 0 24px;
+            p {
+                padding: 16px 24px 0;
+                margin-bottom: 16px;
+            }
+            &-list {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: auto;
+                img {
+                    max-height: 24px;
+                }
+            }
+            &-item:first-child {
+                margin-left: 24px;
+            }
+        }
+        &__video {
+            video {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

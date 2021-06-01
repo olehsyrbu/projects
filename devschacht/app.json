@@ -1,0 +1,12 @@
+{
+  "name": "devschacht",
+  "displayName": "devschacht",
+  "expo": {
+    "name": "devschacht",
+    "slug": "devschacht",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

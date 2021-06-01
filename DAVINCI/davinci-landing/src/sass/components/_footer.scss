@@ -1,0 +1,176 @@
+.footer {
+    background-color: #222;
+    padding: 56px 0 0;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10%;
+        }
+        a {
+            font-weight: 500;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__heading {
+        color: rgba(#fff, .4);
+        font-weight: 900;
+        font-size: 14px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+    }
+    &__list {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__phone {
+        display: flex;
+        position: relative;
+        margin-bottom: 8px;
+        &::before {
+            content: '';
+            display: block;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            background-color: rgba(#fff, .5);
+            background-size: cover;
+            margin-right: 16px;
+            margin-top: 3px;
+        }
+        &.cz::before {
+            background-image: url(../img/cz.svg);
+        }
+        &.gb::before {
+            background-image: url(../img/uk.svg);
+        }
+    }
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 24px;
+        p {
+            font-size: 12px;
+            color: rgba(#fff, .6);
+            line-height: 40px;
+        }
+    }
+    &__logo {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        align-items: center;
+        margin-right: 16px;
+        img {
+            max-width: 24px;
+            width: 100%;
+            display: block;
+            margin-right: 8px;
+        }
+        &-txt {
+            text-transform: uppercase;
+            p {
+                color: #fff;
+                font-size: 19px;
+                line-height: 22px;
+                font-weight: bold;
+            }
+            span {
+                font-size: 9px;
+                line-height: 10px;
+                display: block;
+                font-weight: 700;
+                color: rgba(#fff, .6)
+            }
+        }
+    }
+    &__social {
+        margin-left: auto;
+        display: flex;
+        a {
+            display: flex;
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+            opacity: .5;
+            transition: opacity .225s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    &__line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(#fff, .1);
+        margin-bottom: 24px;
+    }
+    &__mail {
+        border-bottom: 1px solid rgba(#fff, .5);
+        transition: border-bottom-color .225s;
+        margin-bottom: 8px;
+        &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+    &__mails {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: $mob) {
+    .footer {
+        padding: 32px 0 0;
+
+        &__item {
+            width: 100%;
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+            &:last-child {
+                display: flex;
+                flex-wrap: wrap;
+                .footer__heading {
+                    width: 100%;
+                }
+            }
+        }
+        &__heading {
+            margin-bottom: 8px;
+        }
+        &__list {
+            margin-top: 32px;
+            margin-bottom: 56px;
+        }
+        &__bottom {
+            p {
+                line-height: 18px;
+                max-width: calc(100% - 130px);
+            }
+        }
+        &__social {
+            margin-left: auto;
+            display: flex;
+            a {
+                display: flex;
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+                opacity: .5;
+                transition: opacity .225s;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__mail {
+            font-size: 14px;
+        }
+    }
+}

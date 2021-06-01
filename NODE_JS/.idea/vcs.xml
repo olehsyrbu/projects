@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/RESTful_Node.js_Express" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/authenticationIntro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/express-mongo-example-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/express-mongo-example-project copy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ps-intro-to-node" vcs="Git" />
+  </component>
+</project>

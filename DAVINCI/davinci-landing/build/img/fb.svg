@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fb" fill-rule="nonzero">
+            <g id="linkedin-logo-(1)" transform="translate(4.000000, 4.000000)" fill="#FFFFFF">
+                <path d="M15.03125,24 L15.03125,24.007813 L10.96875,24.007813 L10.96875,24 L4,24 C1.790861,24 2.705415e-16,22.209139 0,20 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L20,0 C22.209139,-4.05812251e-16 24,1.790861 24,4 L24,20 C24,22.209139 22.209139,24 20,24 L15.03125,24 Z M15.03125,24 L15.03125,15.003906 L17.464844,15.003906 L17.796875,11.96875 L15.03125,11.96875 L15.035156,10.265625 C15.035156,9.453125 15.113281,9.023438 16.273438,9.023438 L18.03125,9.023438 L18.03125,6 L15.007813,6 C12.019531,6 10.96875,7.503906 10.96875,10.035156 L10.96875,11.96875 L9.390625,11.96875 L9.390625,15.003906 L10.96875,15.003906 L10.96875,24 L15.03125,24 Z" id="Combined-Shape"></path>
+            </g>
+            <rect id="Rectangle-19" x="0" y="0" width="32" height="32"></rect>
+        </g>
+    </g>
+</svg>
