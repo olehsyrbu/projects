@@ -1,0 +1,59 @@
+.mir-dropdown {
+  background-color: white;
+  border: thin solid #eef2f6;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  overflow: auto;
+
+  &[data-reach-listbox-popover] {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    outline: none;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: white;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.06);
+
+    button {
+      padding: 0.375em 1.5em;
+      background: none;
+      border: none;
+      border-radius: 0.5rem;
+      font-family: Roboto;
+      font-size: 1rem;
+      line-height: 1.25;
+      color: var(--p-75);
+
+      &:hover {
+        color: var(--p-75);
+      }
+
+      &.primary {
+        background-color: var(--p-100);
+        color: white;
+
+        &:hover {
+          background-color: var(--p-75);
+        }
+      }
+    }
+  }
+
+  &-empty {
+    display: inline-block;
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-hint);
+  }
+}
+
+[data-organization='bcbsks'] {
+  button {
+    border-radius: 0 !important;
+  }
+}

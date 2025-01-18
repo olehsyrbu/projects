@@ -1,0 +1,46 @@
+.mir-radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.6;
+  --mir-radio-accent-color: var(--p-100);
+
+  &:hover {
+    --mir-radio-accent-color: var(--p-120);
+  }
+
+  &.disabled {
+    color: var(--text-hint);
+    --mir-radio-accent-color: var(--p-75);
+  }
+
+  &-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  &-marker {
+    box-sizing: border-box;
+    margin: 0.0625rem;
+    margin-right: 0.5625rem;
+    min-width: 1.375rem;
+    height: 1.375rem;
+    border: 0.125rem solid var(--mir-radio-accent-color);
+    border-radius: 100%;
+  }
+
+  &-input:checked + &-marker:after {
+    display: block;
+    margin: 0.125rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    background-color: var(--mir-radio-accent-color);
+    border-radius: 100%;
+    content: '';
+  }
+}

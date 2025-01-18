@@ -1,0 +1,28 @@
+.noteContainer {
+  display: grid;
+  grid-template-areas:
+    'h h a'
+    'm m a'
+    'm m a';
+}
+
+.noteHeader {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  grid-area: h;
+}
+
+.noteMessage {
+  line-height: 1.6rem;
+  grid-area: m;
+  line-break: anywhere;
+}
+
+.noteAction {
+  grid-area: a;
+  justify-self: end;
+}
+
+.noteActionPadding {
+  padding: 0;
+}

@@ -1,0 +1,60 @@
+.clusterProfile {
+  .clusterProfileContent {
+    width: 54.375rem;
+    min-height: 12.5rem;
+    max-height: 41rem;
+    overflow: auto;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    .header {
+      padding: 0.625rem 1rem;
+      box-shadow: 0 1px 0 rgba(194, 207, 224, 0.7);
+      .close-button {
+        float: right;
+        padding: 0;
+        height: auto;
+        background: none;
+        border: none;
+        color: var(--p-100);
+        appearance: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .clusterProfileWrapper {
+    overflow: scroll;
+    padding-right: 1.125rem;
+    width: 100%;
+    .listProfiles {
+      overflow: auto;
+      min-height: 9.375rem;
+      max-height: 32rem;
+
+      .ProfileCard {
+        border-radius: 0;
+        background-color: transparent;
+        border: none;
+        box-shadow: 0px 1px 0px rgba(194, 207, 224, 0.7);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .clusterProfile {
+    .clusterProfileWrapper {
+      height: 100vh;
+    }
+    .clusterProfileContent {
+      padding: 1rem;
+      margin: 0;
+      width: fit-content;
+      border-radius: 0;
+      max-height: 100vh;
+      background-color: var(--background);
+      .listProfiles {
+        max-height: calc(100vh - 5.625rem);
+      }
+    }
+  }
+}

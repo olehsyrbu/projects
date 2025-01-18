@@ -1,0 +1,119 @@
+.availability {
+  .availability-column {
+    display: grid;
+    grid-template-columns: 156px 156px;
+    margin-right: 12px;
+    grid-column-gap: 1rem;
+
+    .dropdown-single-select-comact {
+      width: 144px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .availability-column {
+      display: flex;
+    }
+  }
+
+  .dropdown-select {
+    margin-bottom: 24px;
+    width: 210px;
+  }
+
+  .dropdown-single-select-comact .dropdown-items {
+    max-height: 123px;
+    max-width: 99%;
+  }
+
+  .single-select-dropdown-expanded {
+    margin-bottom: 100px;
+  }
+
+  .time-zones {
+    .dropdown-single-select-comact {
+      width: 100%;
+    }
+
+    .dropdown-single-select-comact .dropdown-items {
+      width: 100%;
+      max-width: 99%;
+    }
+  }
+
+  .dropdown-single-select-comact {
+    width: 210px;
+  }
+
+  .checkbox-tooltip-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+
+    .checkbox {
+      .checkbox-button {
+        border: 2px solid var(--p-100);
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .preferred-time {
+    margin-top: 24px;
+    font-family: Roboto, serif;
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    .checkbox-wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      margin-bottom: 24px;
+
+      .chip-button,
+      .chip-checkbox {
+        width: 40px;
+        height: 40px;
+        max-height: 36px;
+        border-radius: 50%;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    }
+
+    .preferred-time-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--text-heading);
+      margin: 0;
+    }
+
+    .preferred-time-text {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      color: var(--text-regular);
+      margin: 12px 0;
+    }
+
+    .weekdays-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .chip-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

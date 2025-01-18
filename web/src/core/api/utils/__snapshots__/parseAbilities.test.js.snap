@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`parse attributes without conditions 1`] = `
+[
+  {
+    "action": [
+      "read",
+      "unaffiliate",
+      "delete",
+      "paginate",
+    ],
+    "subject": "Provider",
+  },
+  {
+    "action": [
+      "read",
+      "write",
+      "delete",
+      "create",
+      "paginate",
+    ],
+    "subject": "Invitation",
+  },
+]
+`;
+
+exports[`parse conditions to objects 1`] = `
+[
+  {
+    "action": [
+      "read",
+      "unaffiliate",
+      "delete",
+      "paginate",
+    ],
+    "conditions": {
+      "owner.organization.id": "571c9349-502a-47ce-9aee-24f780891fa8",
+    },
+    "subject": "Provider",
+  },
+  {
+    "action": [
+      "read",
+      "write",
+      "delete",
+      "create",
+      "paginate",
+    ],
+    "conditions": {
+      "owner.organization.id": "571c9349-502a-47ce-9aee-24f780891fa8",
+    },
+    "subject": "Invitation",
+  },
+]
+`;

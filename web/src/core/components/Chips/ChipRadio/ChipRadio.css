@@ -1,0 +1,53 @@
+.chip-radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  max-width: max-content;
+  cursor: pointer;
+
+  .chip-button {
+    margin: 0 0.0625rem;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #181919;
+    border: 0.0625rem solid #9aafcb;
+    box-sizing: border-box;
+    border-radius: 3.125rem;
+    transition: background 0.15s;
+    padding: 0.625rem 1rem;
+    height: 2.5rem;
+    text-align: center;
+
+    &:hover {
+      border-color: #203b4b;
+    }
+  }
+
+  &.label {
+    cursor: pointer;
+  }
+
+  input.radio-default {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked + .chip-button {
+      background-color: #eef2f6;
+      border-width: 0.125rem;
+      border-color: #203b4b;
+      margin: -0.0625rem 0;
+    }
+
+    &:focus + .chip-button {
+      border-color: #203b4b;
+    }
+  }
+}

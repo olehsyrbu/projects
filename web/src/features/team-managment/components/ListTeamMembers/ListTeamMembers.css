@@ -1,0 +1,22 @@
+.mir-list-member {
+  .mir-recipient-card .actions {
+    align-items: center;
+  }
+
+  section {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    .mir-recipient-card {
+      &:not(:last-child) {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+    h2 {
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+  }
+}

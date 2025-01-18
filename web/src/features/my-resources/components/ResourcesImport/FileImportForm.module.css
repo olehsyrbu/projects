@@ -1,0 +1,30 @@
+.dropzone {
+  display: grid;
+  grid-row-gap: 1rem;
+
+  .shareIcon {
+    color: #b2b2b2;
+  }
+
+  button svg:first-child {
+    margin-left: 0.25rem;
+  }
+
+  a {
+    font-weight: 500;
+  }
+
+  p {
+    display: flex;
+    white-space: pre-wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropzone {
+    justify-items: center;
+    padding: 1.75rem 0;
+    background-color: var(--graphics-10);
+    border-radius: 1.25rem;
+  }
+}

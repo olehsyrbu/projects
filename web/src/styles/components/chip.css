@@ -1,0 +1,31 @@
+.mir-chip {
+  padding: 10px 16px;
+  border: 1px solid var(--graphics-100);
+  border-radius: 50px;
+  width: min-content;
+  cursor: pointer;
+  user-select: none;
+
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-regular);
+  letter-spacing: 0.1px;
+
+  &:hover {
+    color: var(--midnight);
+    border-color: var(--text-heading);
+  }
+
+  &.selected {
+    border: 2px solid var(--text-heading);
+    background: var(--graphics-10);
+    margin: -1px;
+  }
+
+  &.disabled {
+    border: 1px solid var(--graphics-100);
+    color: var(--text-hint);
+    cursor: default;
+  }
+}

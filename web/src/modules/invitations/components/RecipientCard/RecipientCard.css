@@ -1,0 +1,112 @@
+.mir-recipient-card {
+  display: grid;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-heading);
+
+  &.hover {
+    &:hover {
+      border-color: var(--p-100);
+      cursor: pointer;
+    }
+  }
+
+  &.selected {
+    background-color: var(--p-10);
+  }
+
+  &.highlighted {
+    animation: resource-highlight 1.2s ease-out 0.2s 2;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0;
+
+    svg {
+      margin-right: 0.25rem;
+      color: var(--graphics-100);
+    }
+  }
+
+  .actions {
+    display: flex;
+
+    > :not(:last-child) {
+      margin-right: 0.9375rem;
+    }
+
+    .mir-button {
+      padding-left: 0;
+      padding-right: 0;
+      font-weight: 400;
+
+      svg {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mir-recipient-card {
+    grid-row-gap: 0.25rem;
+    justify-content: stretch;
+    margin: 0 -1rem;
+    padding: 1rem 1rem 0.25rem;
+    border-top: thin solid var(--graphics-50);
+
+    &:last-child {
+      border-bottom: thin solid var(--graphics-50);
+    }
+
+    .actions {
+      margin-top: 0.75rem;
+      border-top: thin solid var(--graphics-30);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mir-recipient-card {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1.8fr 1.25fr 1fr auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--background);
+    border: thin solid var(--graphics-30);
+    border-radius: 1rem;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.06);
+
+    &.selected {
+      border-color: var(--p-140);
+    }
+
+    .actions .mir-button {
+      height: auto;
+    }
+  }
+}
+
+@keyframes resource-highlight {
+  from {
+    background-color: var(--background);
+    border-color: var(--graphics-30);
+  }
+  50% {
+    background-color: var(--p-10);
+    border-color: var(--graphics-100);
+  }
+  to {
+    background-color: var(--background);
+    border-color: var(--graphics-30);
+  }
+}

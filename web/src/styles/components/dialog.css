@@ -1,0 +1,44 @@
+[data-reach-dialog-overlay] {
+  z-index: 40 !important;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mir-dialog {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1.5rem 2rem;
+  max-width: 536px;
+  border-radius: 1rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  p {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .mir-button {
+    margin-top: 1.5rem;
+
+    &:not(:last-child) {
+      margin-right: 0.75rem;
+    }
+  }
+
+  .mir-dialog-close-button {
+    position: absolute;
+    top: 1.3125rem;
+    right: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--p-100);
+    cursor: pointer;
+  }
+}

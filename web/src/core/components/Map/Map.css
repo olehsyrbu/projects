@@ -1,0 +1,72 @@
+.mir-google-map {
+  position: sticky;
+  display: block;
+  height: calc(100vh - 8.75rem); /* 8.75rem it is sum of height of header */
+  top: 0;
+}
+
+.map-marker-card {
+  position: relative;
+  width: 22.5rem;
+  z-index: 100;
+
+  /* styles for map card inside marker */
+  .ProfileCard {
+    border-radius: 1rem;
+    grid-template-columns: 3.75rem 1fr;
+
+    &.hide-info {
+      .info {
+        height: 0;
+      }
+    }
+
+    .info {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .tag-line {
+      display: none;
+    }
+
+    .picture {
+      grid-row: 2;
+      margin-top: 0;
+      margin-right: 0;
+    }
+
+    .features {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    h3 {
+      height: 3.75rem;
+      grid-row: 2;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mir-google-map {
+    height: calc(100vh - 90px) !important;
+  }
+  .map-marker-card {
+    width: calc(100% - 2.125rem); /* 2.125rem its sum of paddings between map and card item */
+    transform: none;
+    position: sticky;
+    bottom: 4rem;
+    z-index: 1;
+    left: 1.0625rem; /* this is padding between map view and card */
+
+    .ProfileCard {
+      position: relative;
+    }
+  }
+}

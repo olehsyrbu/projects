@@ -1,0 +1,292 @@
+.LandingPage {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--surface);
+  overflow: hidden;
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.25rem;
+    height: 80px;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  h1 ~ p {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .auth-panel {
+    grid-area: panel;
+    align-self: start;
+    box-sizing: border-box;
+    padding: 2.5rem 1.5rem;
+    max-width: 350px;
+    background-color: var(--background);
+    border-radius: 2rem;
+    box-shadow: 0 4px 33px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    ol {
+      margin-bottom: 1.5rem;
+      padding: 0;
+      list-style: none;
+      counter-reset: index;
+
+      li {
+        display: flex;
+        align-items: center;
+        line-height: 1.6;
+        counter-increment: index;
+
+        &:not(:last-child) {
+          margin-bottom: 0.875rem;
+        }
+
+        &:before {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          margin-right: 0.25rem;
+          min-width: 2em;
+          height: 2em;
+          background-color: var(--p-10);
+          border: thin solid var(--graphics-30);
+          border-radius: 100%;
+          font-family: var(--font-serif);
+          font-size: 0.9375rem;
+          content: counter(index);
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.25rem;
+
+      button:not(:last-child) {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+    h3 {
+      margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: var(--text-heading);
+    }
+
+    h3 ~ p {
+      line-height: 1.6;
+
+      &:not(:last-child) {
+        margin-bottom: 0.75rem;
+      }
+    }
+
+    .mir-button.skeleton {
+      background-color: var(--graphics-30);
+      border: none;
+      color: transparent;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .perks {
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      line-height: 1.6;
+    }
+
+    img {
+      margin-right: 0.75rem;
+      background-color: var(--p-40);
+      border-radius: 100%;
+    }
+  }
+
+  .license {
+    padding: 0 2.25rem 3.375rem;
+    margin: 0 auto;
+    max-width: 1024px;
+    color: var(--text-regular);
+    font-size: 12px;
+  }
+
+  .decoration {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .decoration.default {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 125px;
+
+    path:first-child {
+      fill: var(--p-75);
+    }
+
+    path:last-child {
+      fill: var(--p-100);
+    }
+  }
+
+  @media (max-width: 768px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      justify-content: center;
+    }
+
+    h1,
+    h1 ~ h2,
+    h1 ~ p {
+      text-align: center;
+    }
+
+    .AuthPanel {
+      margin: 0 auto 1.5rem;
+    }
+
+    .auth-panel {
+      align-self: center;
+    }
+
+    .perks {
+      li {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    main {
+      display: grid;
+      grid-template-areas:
+        'h1 panel'
+        'paragraph panel'
+        'h2 panel'
+        'perks panel';
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto auto auto auto;
+      grid-gap: 0 2.25rem;
+      margin: 0 auto;
+      padding: 3.875rem 2.25rem 3.875rem;
+      max-width: 1024px;
+    }
+
+    h1 {
+      grid-area: h1;
+      margin-bottom: 3.5rem;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    h1 ~ p {
+      grid-area: paragraph;
+      margin-bottom: 3.5rem;
+      font-size: 1.5rem;
+    }
+
+    h1 ~ h2 {
+      grid-area: h2;
+    }
+
+    .perks {
+      grid-area: perks;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-right: 1.5rem;
+        width: 33.3%;
+
+        &:not(:nth-child(n + 4)) {
+          margin-bottom: 3rem;
+        }
+
+        img {
+          margin-bottom: 0.75rem;
+        }
+
+        span {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+[data-organization] .LandingPage {
+  header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    .organization-logo {
+      height: 32px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+      justify-content: center;
+    }
+
+    @media (min-width: 769px) {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      height: 96px;
+    }
+  }
+
+  .AuthPanel {
+    border-radius: 0;
+  }
+}
+
+[data-organization='bcbsks'] {
+  .AuthPanel .actions .mir-button {
+    text-transform: uppercase;
+
+    &:not(:hover):not(.primary):not(.skeleton) {
+      color: var(--text-heading);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.survey-step {
+  @apply flex flex-col px-4 pt-6;
+  @apply box-border w-full md:mx-auto md:box-content md:block md:max-w-[700px] md:px-8 md:py-10;
+}
+
+.survey-step h1 {
+  @apply mb-4 text-2xl font-bold;
+  @apply md:mb-6;
+  font-family: var(--font-sans);
+}
+
+.survey-step h1 ~ p {
+  @apply mb-6 leading-relaxed;
+  @apply md:mb-8;
+}
+
+.survey-step form {
+  @apply flex flex-1 flex-col;
+}
+
+.survey-step legend {
+  @apply mb-4;
+  @apply font-bold leading-normal;
+}

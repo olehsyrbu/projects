@@ -1,0 +1,11 @@
+.GPAEditProfile {
+  max-width: 68rem;
+
+  :global(#providerDashboard #editProvider #desktop) {
+    margin-left: 0;
+  }
+
+  :global(#providerDashboard #content > div:not(#editProvider)) {
+    padding-left: 0;
+  }
+}

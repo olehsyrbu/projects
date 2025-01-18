@@ -1,0 +1,220 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`downgrade admin to member 1`] = `
+{
+  "admins": [
+    {
+      "email": "john_k@familypractice.com",
+      "id": "firstTeamAdmin",
+      "invitationCode": "code-firstTeamAdmin",
+      "messageType": "EMAIL",
+      "recipientName": "Aydon Carter",
+      "sentAt": "2021-11-25T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "john_k@familypractice.com",
+        "firstName": "Aydon",
+        "id": "user-firstTeamAdmin",
+        "lastName": "Carter",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "REFERRAL_COORDINATOR",
+      },
+    },
+  ],
+  "members": [
+    {
+      "email": "joe@example.com",
+      "id": "firstTeamMember",
+      "invitationCode": "code-firstTeamMember",
+      "messageType": "EMAIL",
+      "recipientName": "Anton Joe",
+      "sentAt": "2021-11-25T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "joe@example.com",
+        "firstName": "Anton",
+        "id": "user-firstTeamMember",
+        "lastName": "Joe",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "TEAM_MEMBER",
+      },
+    },
+    {
+      "email": "i.smedes@gmail.com",
+      "id": "secondTeamAdmin",
+      "invitationCode": "code-secondTeamAdmin",
+      "messageType": "EMAIL",
+      "recipientName": "Bngeborga Smedes",
+      "sentAt": "2021-11-23T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "i.smedes@gmail.com",
+        "firstName": "Bngeborga",
+        "id": "user-secondTeamAdmin",
+        "lastName": "Smedes",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "TEAM_MEMBER",
+      },
+    },
+  ],
+  "userId": undefined,
+}
+`;
+
+exports[`promote member to admin 1`] = `
+{
+  "admins": [
+    {
+      "email": "john_k@familypractice.com",
+      "id": "firstTeamAdmin",
+      "invitationCode": "code-firstTeamAdmin",
+      "messageType": "EMAIL",
+      "recipientName": "Aydon Carter",
+      "sentAt": "2021-11-25T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "john_k@familypractice.com",
+        "firstName": "Aydon",
+        "id": "user-firstTeamAdmin",
+        "lastName": "Carter",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "REFERRAL_COORDINATOR",
+      },
+    },
+    {
+      "email": "bill@example.com",
+      "id": "secondTeamMember",
+      "invitationCode": "code-secondTeamMember",
+      "messageType": "EMAIL",
+      "recipientName": "Bill Tomson",
+      "sentAt": "2021-11-23T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "bill@example.com",
+        "firstName": "Bill",
+        "id": "user-secondTeamMember",
+        "lastName": "Tomson",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "REFERRAL_COORDINATOR",
+      },
+    },
+  ],
+  "members": [
+    {
+      "email": "joe@example.com",
+      "id": "firstTeamMember",
+      "invitationCode": "code-firstTeamMember",
+      "messageType": "EMAIL",
+      "recipientName": "Anton Joe",
+      "sentAt": "2021-11-25T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "joe@example.com",
+        "firstName": "Anton",
+        "id": "user-firstTeamMember",
+        "lastName": "Joe",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "TEAM_MEMBER",
+      },
+    },
+  ],
+  "userId": undefined,
+}
+`;
+
+exports[`remove admin 1`] = `
+{
+  "admins": [
+    {
+      "email": "john_k@familypractice.com",
+      "id": "firstTeamAdmin",
+      "invitationCode": "code-firstTeamAdmin",
+      "messageType": "EMAIL",
+      "recipientName": "Aydon Carter",
+      "sentAt": "2021-11-25T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "john_k@familypractice.com",
+        "firstName": "Aydon",
+        "id": "user-firstTeamAdmin",
+        "lastName": "Carter",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "REFERRAL_COORDINATOR",
+      },
+    },
+  ],
+  "members": [
+    {
+      "email": "joe@example.com",
+      "id": "firstTeamMember",
+      "invitationCode": "code-firstTeamMember",
+      "messageType": "EMAIL",
+      "recipientName": "Anton Joe",
+      "sentAt": "2021-11-25T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "joe@example.com",
+        "firstName": "Anton",
+        "id": "user-firstTeamMember",
+        "lastName": "Joe",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "TEAM_MEMBER",
+      },
+    },
+  ],
+  "userId": undefined,
+}
+`;
+
+exports[`remove member 1`] = `
+{
+  "admins": [
+    {
+      "email": "john_k@familypractice.com",
+      "id": "firstTeamAdmin",
+      "invitationCode": "code-firstTeamAdmin",
+      "messageType": "EMAIL",
+      "recipientName": "Aydon Carter",
+      "sentAt": "2021-11-25T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "john_k@familypractice.com",
+        "firstName": "Aydon",
+        "id": "user-firstTeamAdmin",
+        "lastName": "Carter",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "REFERRAL_COORDINATOR",
+      },
+    },
+    {
+      "email": "i.smedes@gmail.com",
+      "id": "secondTeamAdmin",
+      "invitationCode": "code-secondTeamAdmin",
+      "messageType": "EMAIL",
+      "recipientName": "Bngeborga Smedes",
+      "sentAt": "2021-11-23T07:10:19.697Z",
+      "status": "OPEN",
+      "type": "ORGANIZATION_MEMBER",
+      "user": {
+        "email": "i.smedes@gmail.com",
+        "firstName": "Bngeborga",
+        "id": "user-secondTeamAdmin",
+        "lastName": "Smedes",
+        "loggedInAt": "2021-11-05T11:57:37.686Z",
+        "role": "REFERRAL_COORDINATOR",
+      },
+    },
+  ],
+  "members": [],
+  "userId": undefined,
+}
+`;

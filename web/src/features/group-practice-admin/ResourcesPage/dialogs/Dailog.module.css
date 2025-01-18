@@ -1,0 +1,15 @@
+.support {
+  margin-top: 1rem;
+}
+
+.content {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+@media (max-width: 499px) {
+  .content {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

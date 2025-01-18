@@ -1,0 +1,59 @@
+.clusterMarker {
+  height: 3rem;
+  width: 3rem;
+  line-height: 2.5rem;
+  background-color: #1fa3aa;
+  border-radius: 50%;
+  text-align: center;
+  border: 0.3125rem solid white;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    z-index: 9999;
+    border: 0.3125rem solid var(--p-100);
+  }
+}
+
+.avatarMarker,
+.clusterMarker {
+  cursor: pointer;
+  position: relative;
+  left: -1.5rem; /* center of marker = 3rem all height */
+  top: -1.5rem; /* center of marker */
+}
+
+.avatarMarker {
+  height: 3.625rem;
+  width: 3.625rem;
+  .marker-info {
+    position: absolute;
+  }
+
+  &.hint--bottom {
+    .marker-info {
+      top: 110%;
+    }
+  }
+  &.hint--top {
+    .marker-info {
+      bottom: 110%;
+    }
+  }
+
+  .mir-avatar {
+    background-color: var(--background);
+    border: 0.3125rem solid var(--background);
+  }
+
+  &:hover,
+  &.active {
+    z-index: 9999;
+    .mir-avatar {
+      border: 0.3125rem solid var(--p-100);
+    }
+  }
+
+  .ProfileCard {
+    width: 22.5rem;
+  }
+}

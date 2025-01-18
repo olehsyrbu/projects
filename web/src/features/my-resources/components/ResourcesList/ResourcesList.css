@@ -1,0 +1,138 @@
+.resources-list {
+  .sent-message-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: var(--graphics-10);
+    border: thin solid var(--graphics-30);
+    border-radius: 1rem;
+    color: var(--text-heading);
+    line-height: 1.5;
+
+    .mir-button {
+      margin-left: 0.5rem;
+      padding: 0 0.5rem;
+      height: auto;
+    }
+  }
+
+  [role='list'] {
+    margin-bottom: 1.5rem;
+  }
+
+  .ProfileCard {
+    .mir-button {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  .no-resources {
+    padding: 2rem 1.5rem;
+    background-color: var(--background);
+    border-radius: 1rem;
+    font-size: 1.125rem;
+    border: thin solid var(--graphics-30);
+    color: var(--text-regular);
+
+    h2 {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+  }
+
+  .pagination {
+    margin-bottom: 1.5rem;
+  }
+
+  .pagination-info {
+    display: none;
+  }
+
+  .content-subheader {
+    display: flex;
+    justify-content: space-between;
+    margin: -0.75rem 0 0.75rem;
+
+    .selection-panel {
+      display: grid;
+      grid-auto-flow: column;
+      grid-column-gap: 1.25rem;
+      justify-content: start;
+      align-items: center;
+
+      .mir-button {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      @media (max-width: 767px) {
+        margin-top: -1rem;
+      }
+    }
+
+    .sorting-panel {
+      display: flex;
+      width: 24rem;
+
+      .toggle-switch-container {
+        width: 8.5rem;
+        margin-left: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 0 0.75rem;
+      flex-direction: column;
+      width: 100%;
+
+      .sorting-panel {
+        width: auto;
+        justify-content: space-between;
+
+        .toggle-switch-container {
+          width: auto;
+          margin-left: 0;
+        }
+
+        div:first-child {
+          width: 15rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .resources-list {
+    .mir-segmented-buttons .mir-button {
+      flex: 1;
+    }
+
+    .ProfileCard {
+      margin: 0 -1rem;
+
+      .mir-button {
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .resources-list {
+    [role='list'] {
+      display: grid;
+      grid-row-gap: 0.75rem;
+    }
+  }
+}

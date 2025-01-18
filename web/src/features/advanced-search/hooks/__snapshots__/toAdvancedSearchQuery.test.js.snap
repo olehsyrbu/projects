@@ -1,0 +1,796 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`converts both only 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "in_person": {
+          "available": true,
+        },
+      },
+      {
+        "remote": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "location": {},
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`converts in-person only 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "in_person": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "location": {},
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`converts location into filter 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "in_person": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "location": {},
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`converts remote only 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "remote": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "location": {},
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "amenities" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "amenities": [
+      "1",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "amenities" 2`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "can prescribe medication" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "can_prescribe_medication": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "can prescribe medication" 2`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "canAssistWithDailyLiving" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "can_assist_with_daily_living": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "canAssistWithDailyLiving" 2`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "current availability" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "availability": {
+      "status": {
+        "in": [
+          "ACCEPTING_NEW_CLIENTS",
+          "PLEASE_INQUIRE",
+        ],
+      },
+    },
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "current availability" 2`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "dietaryAccommodations" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "dietary_accommodation": [
+      "1",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "dietaryAccommodations" 2`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "ethnicities" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "ethnicities": [
+      "dfdf",
+      "4444",
+      "494949494",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "genders" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "genders": [
+      "dfdf",
+      "4444",
+      "494949494",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "languages" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "language_services": [
+      "dfdf",
+      "4444",
+      "494949494",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "rainbowMember" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "rainbow_member": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "rainbowMember" 2`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "religions" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "religions": [
+      "dfdf",
+      "4444",
+      "494949494",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "treatsMedicallyUnstable" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "treats_medically_unstable": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "treatsMedicallyUnstable" 2`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "treatsSuicidalIdeation" 1`] = `
+{
+  "filter": {
+    "active": true,
+    "treats_suicidal_ideation": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has "treatsSuicidalIdeation" 2`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has all params 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "in_person": {
+          "available": true,
+        },
+      },
+      {
+        "remote": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "amenities": [
+      "am1",
+      "am2",
+    ],
+    "availability": {
+      "status": {
+        "in": [
+          "ACCEPTING_NEW_CLIENTS",
+          "PLEASE_INQUIRE",
+        ],
+      },
+    },
+    "can_assist_with_daily_living": true,
+    "can_prescribe_medication": true,
+    "dietary_accommodation": [
+      "1",
+      "2",
+    ],
+    "fuzzy_search": "some name",
+    "insurance_types": [
+      "nI1",
+      "nI2",
+    ],
+    "location": {},
+    "modes": [
+      "PERSON",
+      "PROGRAM",
+    ],
+    "payment_options": [
+      "pm1",
+      "pm2",
+    ],
+    "provider_types": [
+      "pt1",
+      "pt2",
+    ],
+    "sexual_identities": [
+      "sp1",
+      "sp2",
+    ],
+    "special_groups": [
+      "sg1",
+      "sg2",
+    ],
+    "therapeutic_areas": [
+      "sp1",
+      "sp2",
+    ],
+    "therapies": [
+      "md1",
+      "md2",
+    ],
+    "treatments": [
+      "tr1",
+      "tr2",
+    ],
+    "treats_medically_unstable": true,
+    "treats_suicidal_ideation": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has day into filter 1`] = `
+{
+  "filter": {
+    "active": true,
+    "availability": {
+      "day": [
+        "SUNDAY",
+        "MONDAY",
+      ],
+    },
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has modes 1`] = `
+{
+  "filter": {
+    "active": true,
+    "modes": [
+      "PERSON",
+      "PROGRAM",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has organizationSubdomain into filter 1`] = `
+{
+  "filter": {
+    "active": true,
+    "organization_subdomains": [
+      "bcbsks",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has provider types 1`] = `
+{
+  "filter": {
+    "active": true,
+    "provider_types": [
+      "000",
+      "111",
+      "222",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has query into filter 1`] = `
+{
+  "filter": {
+    "active": true,
+    "fuzzy_search": "bbkbkkbkbkbkb",
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has sexualIdentities 1`] = `
+{
+  "filter": {
+    "active": true,
+    "sexual_identities": [
+      "123",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has special groups 1`] = `
+{
+  "filter": {
+    "active": true,
+    "special_groups": [
+      "000",
+      "111",
+      "222",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has specialGroups into filter 1`] = `
+{
+  "filter": {
+    "active": true,
+    "special_groups": [
+      "000",
+      "111",
+      "222",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has specialties into filter 1`] = `
+{
+  "filter": {
+    "active": true,
+    "therapeutic_areas": [
+      "000",
+      "111",
+      "222",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has to gql variables location and both 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "in_person": {
+          "available": true,
+        },
+      },
+      {
+        "remote": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "fuzzy_search": "Test Query",
+    "location": {},
+    "therapeutic_areas": [
+      "000",
+      "111",
+      "222",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has to gql variables location and inPerson 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "in_person": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "fuzzy_search": "Test Query",
+    "location": {},
+    "therapeutic_areas": [
+      "000",
+      "111",
+      "222",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has to gql variables location and remote 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "remote": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "fuzzy_search": "Test Query",
+    "location": {},
+    "therapeutic_areas": [
+      "000",
+      "111",
+      "222",
+    ],
+  },
+  "limit": 10,
+  "page": 2,
+}
+`;
+
+exports[`has to gql variables location with bounds 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "in_person": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "fuzzy_search": "Test Query",
+    "location": {},
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has to gql variables location with bounds both 1`] = `
+{
+  "filter": {
+    "OR": [
+      {
+        "in_person": {
+          "available": true,
+        },
+      },
+      {
+        "remote": {
+          "available": true,
+        },
+      },
+    ],
+    "active": true,
+    "fuzzy_search": "Test Query",
+    "location": {},
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`has to gql variables no location, no settings 1`] = `
+{
+  "filter": {
+    "active": true,
+    "fuzzy_search": "Test Query",
+    "therapeutic_areas": [
+      "000",
+      "111",
+      "222",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides accommodations insurance 1`] = `
+{
+  "filter": {
+    "accommodations": [
+      "000",
+      "111",
+    ],
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides age group 1`] = `
+{
+  "filter": {
+    "active": true,
+    "age_groups": [
+      "blblblbl",
+      "ssss",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides endTime 1`] = `
+{
+  "filter": {
+    "active": true,
+    "availability": {
+      "end": "15:30",
+    },
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides modalities 1`] = `
+{
+  "filter": {
+    "active": true,
+    "therapies": [
+      "000",
+      "111",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides network insurance 1`] = `
+{
+  "filter": {
+    "active": true,
+    "insurance_types": [
+      "000",
+      "111",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides payment methods 1`] = `
+{
+  "filter": {
+    "active": true,
+    "payment_options": [
+      "000",
+      "111",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides sorting 1`] = `
+{
+  "filter": {
+    "active": true,
+  },
+  "limit": 5,
+  "page": 1,
+  "sort": {
+    "nearest": "ASC",
+  },
+}
+`;
+
+exports[`provides startTime 1`] = `
+{
+  "filter": {
+    "active": true,
+    "availability": {
+      "start": "12:30",
+    },
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides timezone 1`] = `
+{
+  "filter": {
+    "active": true,
+    "availability": {
+      "timezone": "Pacific/Pago_Pago",
+    },
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;
+
+exports[`provides treatments 1`] = `
+{
+  "filter": {
+    "active": true,
+    "treatments": [
+      "000",
+      "111",
+    ],
+  },
+  "limit": 5,
+  "page": 1,
+}
+`;

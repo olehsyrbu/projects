@@ -1,0 +1,59 @@
+.referral-list-widget {
+  position: sticky;
+  padding: 24px;
+  bottom: 0;
+  border: 1px solid #dedede;
+  margin: auto auto 0;
+  text-align: center;
+  display: flex;
+  width: 450px;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px 16px 0 0;
+  justify-content: center;
+
+  &.flex-column {
+    flex-direction: column;
+  }
+
+  .mir-dialog-buttons {
+    position: relative;
+  }
+  .content {
+    margin: 0;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    bottom: 0 !important;
+    width: auto;
+  }
+}
+
+.map-block {
+  @media (max-width: 768px) {
+    color: #007089;
+    svg {
+      fill: #007089;
+      height: 16px;
+    }
+    position: sticky;
+    border: 1px solid #007089;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    justify-content: center;
+    bottom: 45px;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+}

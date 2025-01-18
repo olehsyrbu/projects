@@ -1,0 +1,225 @@
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  color: white;
+
+  .section-layout {
+    margin: 20px 0 20px;
+    width: calc(100% - 340px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .content-us {
+        > p,
+        a {
+          font-family: Roboto, serif;
+          font-weight: 700;
+          font-size: 1rem;
+          line-height: 29.4px;
+          letter-spacing: normal;
+          color: var(--text-inverted);
+        }
+      }
+      .policy {
+        display: flex;
+        flex-direction: column;
+
+        > p,
+        a {
+          text-decoration: none;
+          font-family: Roboto, serif;
+          font-weight: 700;
+          font-size: 1rem;
+          line-height: 210%;
+          color: var(--text-inverted);
+        }
+      }
+      .disclaimer {
+        max-width: 428px;
+        font-family: Roboto, serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+
+        > span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .license {
+      font-family: Roboto, serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 210%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .section-footer {
+    .section-layout {
+      margin: 30px 0 30px;
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-footer {
+    .section-layout {
+      margin: 30px 0 30px;
+      width: 90%;
+      .text-wrapper {
+        .policy {
+          margin: 0 24px;
+          min-width: 125px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-footer .section-layout {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .disclaimer {
+    text-align: center;
+  }
+}
+
+.footer {
+  .section-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+
+    .text-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      font-family: Roboto, serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 29.4px;
+      color: #002855;
+
+      .policy {
+        display: flex;
+        flex-direction: column;
+
+        > a {
+          font-family: Roboto, serif;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 29.4px;
+          color: #002855;
+        }
+      }
+
+      .disclaimer {
+        max-width: 428px;
+        font-weight: 300;
+        line-height: 15.96px;
+
+        > span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .license {
+      font-family: Roboto, serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 29.4px;
+      color: #002855;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 12px;
+
+    .section-layout {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contact-us,
+        .for-who,
+        .policy {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 30px;
+        }
+
+        .disclaimer {
+          max-width: 428px;
+          font-weight: 300;
+          line-height: 15.96px;
+          > span {
+            font-weight: 700;
+          }
+        }
+      }
+
+      .license {
+        font-family: Roboto, serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 29.4px;
+        color: #002855;
+      }
+    }
+  }
+  .section-footer {
+    .section-layout {
+      margin: 32px 0 23px;
+      padding: 0 32px;
+
+      .text-wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        .content-us,
+        .policy {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 32px;
+        }
+
+        .disclaimer {
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0.1px;
+
+          > span {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}

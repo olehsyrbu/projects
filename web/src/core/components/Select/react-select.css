@@ -1,0 +1,175 @@
+/* START MULTISELECT STYLE */
+.react-select.react-select__common__multi-value {
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+  margin: 0;
+}
+
+.react-select.react-select__common__multi-value__label {
+  padding: 0;
+}
+
+.react-select.react-select__common__multi-value__remove {
+  position: absolute;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+}
+
+.react-select.react-select__common__option--is-selected {
+  background-color: var(--p-20);
+  color: inherit;
+}
+
+.react-select.react-select__common__value-container {
+  padding: 1rem 0.5rem 0;
+}
+
+.react-select__common__input-container {
+  margin: 0 !important;
+}
+
+.noMargin {
+  .react-select.react-select__common__control {
+    margin: 0;
+  }
+}
+
+.react-select.react-select__common__control {
+  box-sizing: border-box;
+  box-shadow: none;
+  border-color: var(--p-75);
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--graphics-50);
+  min-height: 3rem;
+
+  &.react-select__common__control--is-disabled {
+    background-color: var(--graphics-20);
+
+    label {
+      color: var(--graphics-70);
+      background-color: var(--graphics-20);
+    }
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 0.125rem var(--p-75);
+    border-color: transparent;
+  }
+}
+
+.react-select.react-select__common__control--menu-is-open {
+  box-shadow: inset 0 0 0 0.125rem var(--p-75);
+  border-color: transparent;
+}
+
+.react-select.react-select__common__option.react-select__common__option--is-focused {
+  background-color: var(--p-10);
+}
+
+.react-select.react-select__common__group-heading {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--text-regular);
+  text-transform: initial;
+
+  + div .react-select.react-select__common__option {
+    padding-left: 1.5rem;
+  }
+}
+
+.react-select.react-select__common__menu {
+  z-index: 100;
+}
+
+.react-select.react-select__common__control {
+  z-index: 10;
+}
+
+.react-select.react-select__common__menu {
+  z-index: 1000;
+  box-shadow: 0 0.25rem 0.625rem rgb(0 0 0 / 10%);
+  border: 1px solid #f1efef;
+}
+
+.react-select.react-select__common__menu-list {
+  max-height: 20rem;
+
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #e6e6e6;
+  }
+
+  @media (max-width: 767px) {
+    overflow: auto;
+    max-height: 23rem;
+  }
+}
+
+.react-select.select__single__menu-list {
+  @media (max-width: 767px) {
+    max-height: 29rem;
+  }
+}
+
+.react-select.react-select__common__indicators,
+.react-select.react-select__common__clear-indicator {
+  color: var(--p-100);
+
+  &:hover {
+    color: var(--p-100);
+  }
+}
+
+/* END SINGLE SELECT STYLE */
+
+.reactSelectError {
+  label {
+    color: var(--error-1) !important;
+  }
+
+  .react-select.react-select__common__control {
+    &:hover {
+      box-shadow: 0 0 0 1px var(--error-1);
+      border-color: transparent;
+    }
+  }
+
+  .react-select__common.react-select__common__control--is-focused {
+    box-shadow: 0 0 0 1px var(--error-1);
+    border-color: transparent;
+  }
+
+  .react-select.react-select__common__control {
+    border-color: var(--error-1);
+    color: var(--error-1);
+
+    &:focus,
+    &:hover {
+      border-color: var(--error-1) !important;
+    }
+  }
+
+  .react-select.react-select__common__placeholder,
+  .react-select.select__single__placeholder {
+    color: var(--error-1);
+  }
+
+  .react-select.react-select__common.react-select__common__control {
+    border-color: var(--error-1);
+
+    &:focus,
+    &:hover {
+      border-color: #ff5147 !important;
+    }
+  }
+}

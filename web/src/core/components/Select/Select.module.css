@@ -1,0 +1,389 @@
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+/* maybe could common style */
+.errorMessage {
+  font-family: Roboto, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+  color: var(--error-1);
+}
+
+.infoMessage {
+  width: 100%;
+  font-family: Roboto, serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 8px;
+  color: var(--text-regular);
+}
+
+.dialogTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .backButton {
+    margin-right: auto;
+    padding: 0;
+    background: none;
+    border: none;
+    appearance: none;
+
+    svg {
+      vertical-align: middle;
+      color: var(--p-100);
+    }
+  }
+
+  h2 {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.selectList {
+  position: relative;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 10000;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .listOptionGroup {
+    .optionItemGroup {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--text-regular);
+      padding: 0;
+      margin-bottom: 0.5rem;
+
+      & + ul {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+
+  .optionItem {
+    cursor: pointer;
+    padding: 0.25em 1em;
+    font-size: 1rem;
+    line-height: 2;
+    min-height: 2rem;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &[data-reach-listbox-option] {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &[data-current-selected],
+    &[data-selected='true'] {
+      background-color: var(--p-10);
+      font-weight: normal;
+
+      svg {
+        color: var(--p-100);
+        min-width: 1.5rem;
+      }
+    }
+
+    &.focused {
+      background-color: var(--graphics-30);
+    }
+
+    [data-suggested-value] {
+      font-weight: normal;
+    }
+  }
+}
+
+.fieldInputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  background: var(--text-inverted);
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-width 0.2s ease-in;
+  box-shadow: none;
+  height: 3rem;
+  -moz-appearance: textfield;
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  pointer-events: auto;
+  background-color: inherit;
+
+  &.fieldInputSticky {
+    position: sticky;
+    top: -1.5rem;
+    background-color: white;
+    z-index: 100000;
+  }
+
+  .fieldInputChevron {
+    margin-left: auto;
+  }
+
+  .fieldInputRemoveBtn {
+    background: none;
+    border: none;
+    margin-right: auto;
+    position: absolute;
+    right: 10px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .fieldInputChevron,
+  .fieldInputRemoveBtn {
+    &:hover {
+      svg {
+        color: var(--p-120);
+      }
+    }
+
+    svg {
+      color: var(--p-100);
+    }
+  }
+
+  &.borderError {
+    /* this is uses for mobile */
+    .fieldInput {
+      color: var(--error-1);
+      border: 1px solid var(--error-1);
+    }
+  }
+
+  &:first-child {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+
+  &:not(:first-child) {
+    border-left: thin solid var(--graphics-30);
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--p-10);
+
+    & + .submit-button-wrapper {
+      background-color: var(--p-10);
+    }
+  }
+
+  .ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .fieldInput {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    justify-content: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    background: var(--background);
+    box-sizing: border-box;
+    border: 0.0625rem solid var(--graphics-70);
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border-width 0.2s ease-in;
+    box-shadow: none;
+    height: 3rem;
+    padding: 0 0.75rem;
+    cursor: pointer;
+    color: inherit;
+
+    &.disabled {
+      background-color: var(--graphics-20);
+
+      span {
+        color: var(--graphics-70);
+      }
+    }
+
+    &.noBorder {
+      border: none;
+    }
+
+    &:hover {
+      box-shadow: none;
+      border-color: var(--p-75);
+    }
+
+    &::placeholder {
+      color: var(--text-regular);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &[data-reach-listbox-button]:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      content: '';
+    }
+  }
+
+  .fieldInputWithRemove {
+    padding-right: 2rem;
+  }
+}
+
+/* Desktop version */
+.dropDownDesktopWrapper {
+  position: relative;
+  width: 100%;
+
+  .dropdownIndicator {
+    padding: 0 0.5rem;
+    cursor: pointer;
+    display: flex;
+  }
+}
+
+.reactSelectControl {
+  transition: all 1s;
+
+  .reactSelectLabel {
+    z-index: 100 !important;
+    position: absolute;
+    top: 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: normal;
+    color: var(--text-hint);
+    opacity: 1;
+    margin-left: 0.6875rem;
+  }
+
+  .reactSelectLabel.selectedLabel {
+    padding-right: 0.25rem;
+    transform: translateY(-0.6rem);
+    font-size: 0.75rem;
+    color: var(--p-100);
+    background-color: white;
+  }
+}
+
+.dropDownActions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: white;
+  box-shadow: 0px -0.1875px 0.625rem rgba(0, 0, 0, 0.06);
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  button {
+    cursor: pointer;
+    padding: 0.375em 1.5em;
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: Roboto, serif;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: var(--p-75);
+    min-height: 2.5rem;
+
+    &:hover {
+      color: var(--p-75);
+    }
+
+    &.primary {
+      background-color: var(--p-100);
+      color: white;
+
+      &:disabled {
+        cursor: default;
+        background-color: var(--p-75);
+      }
+
+      &:hover {
+        background-color: var(--p-75);
+      }
+    }
+
+    &.clear {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 0.9375rem;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.00625rem;
+      color: var(--p-100);
+      background: none;
+    }
+  }
+}
+
+.dropDownEmpty {
+  display: inline-block;
+  padding: 1rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--text-hint);
+}
+
+@media (max-width: 767px) {
+  .dropDownActions {
+    margin: 0 -1rem -1rem;
+
+    button {
+      min-height: 3rem;
+
+      &.primary {
+        width: 100%;
+      }
+
+      &.clear {
+        display: none;
+      }
+    }
+  }
+  .errorMessage {
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+}
+
+/* End Desktop version */

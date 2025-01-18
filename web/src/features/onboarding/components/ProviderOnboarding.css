@@ -1,0 +1,198 @@
+#providerOnboardingContainer {
+  position: relative;
+  background-color: var(--surface);
+  max-width: 100%;
+  margin: 0;
+  padding-top: 1.25rem;
+
+  /* temporary scrollbar fix */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  #step1,
+  #step2,
+  #step3,
+  #step4,
+  #step5,
+  #step6,
+  #step8,
+  #confirmation,
+  #groupTherapy {
+    padding-bottom: 2rem;
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    font-size: 1.875rem;
+    font-family: var(--font-serif);
+    color: #1fa3aa;
+    background-color: var(--surface);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+  }
+
+  .progress-container {
+    background: var(--surface);
+    box-shadow: 0 -0.3125rem 0.625rem rgba(0, 0, 0, 0.03);
+    width: 100vw;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+
+    .progress-bar-content {
+      max-width: 64rem;
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+
+  ::selection {
+    background-color: var(--p-75);
+    color: var(--text-inverted);
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-family: var(--font-sans);
+    color: var(--text-heading);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    color: var(--text-heading);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .react-select-wrapper,
+  .provider-license,
+  .input-text {
+    max-width: 26rem;
+  }
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .subtext {
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #454545;
+    letter-spacing: 0.00625rem;
+  }
+
+  #providerOnboarding {
+    max-width: 64rem;
+    width: 92vw;
+    margin: auto;
+
+    .onboarding-field {
+      margin-bottom: 2rem;
+    }
+
+    .has-chips {
+      margin-bottom: 0;
+    }
+
+    & > div:first-child {
+      animation-fill-mode: forwards;
+      animation: fadein 1s;
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .fade-in {
+    animation-fill-mode: forwards;
+    animation: fadein 1s;
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .fade-in-fast {
+    animation-fill-mode: forwards;
+    animation: fadein 0.4s;
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .fade-in-faster {
+    animation-fill-mode: forwards;
+    animation: fadein 0.3s;
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    fieldset {
+      display: contents;
+    }
+    #navbar {
+      margin-bottom: 0;
+      height: 2rem;
+    }
+  }
+}
+
+[data-organization='bcbsks'] {
+  textarea {
+    border-radius: 0 !important;
+  }
+
+  textarea {
+    &:hover,
+    &:focus {
+      border-color: var(--p-100) !important;
+    }
+  }
+}

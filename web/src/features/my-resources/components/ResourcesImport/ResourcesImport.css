@@ -1,0 +1,62 @@
+.ResourcesImport {
+  h2 {
+    margin-bottom: 1rem;
+    font-family: Roboto, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  h2 + p {
+    margin-bottom: 1rem;
+  }
+
+  .import-method {
+    margin-bottom: 1rem;
+
+    .mir-radio:first-child {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .error-message {
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--error-1);
+  }
+
+  .file-dropzone {
+    display: grid;
+    grid-row-gap: 0.75rem;
+    justify-items: stretch;
+
+    &:focus {
+      outline: none;
+    }
+
+    a {
+      font-weight: 500;
+    }
+
+    p {
+      @media (max-width: 767px) {
+        font-size: 0.875rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      justify-items: center;
+      padding: 1.75rem;
+      background-color: var(--graphics-10);
+      border-radius: 1.25rem;
+    }
+  }
+
+  .mir-cabinet-actions button:first-child {
+    flex: 2;
+  }
+}

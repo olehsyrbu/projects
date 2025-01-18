@@ -1,0 +1,125 @@
+@media (max-width: 767px) {
+  .mir-cabinet {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    #mobileNavbar {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  .mir-cabinet-page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 1rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem 0;
+    min-height: 100%;
+  }
+
+  .mir-cabinet-heading {
+    h1 {
+      font-size: 1.5rem;
+      line-height: 1.4;
+
+      &:not(:only-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .mir-cabinet-actions {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    margin: 0 -1rem;
+    padding: 0.625rem;
+    background-color: var(--background);
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.06);
+
+    > * {
+      flex: 1;
+
+      &:not(:last-child) {
+        margin-right: 0.625rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mir-cabinet {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: var(--surface);
+    height: 100%;
+
+    /* TODO: redo with normal sidebar */
+    #sidebar {
+      position: sticky;
+      top: 0;
+      width: 240px;
+      height: 100vh;
+    }
+  }
+
+  .mir-cabinet-page-container {
+    padding: 2rem 6rem;
+    overflow: inherit;
+  }
+
+  .mir-cabinet-page {
+    display: grid;
+    grid-template:
+      'heading actions' auto
+      'content content' auto / 1fr auto;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1032px;
+  }
+
+  .mir-cabinet-heading {
+    grid-area: heading;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.15;
+      white-space: nowrap;
+
+      &:not(:only-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .mir-cabinet-content {
+    grid-area: content;
+    margin-top: 1rem;
+    padding-top: 1.375rem;
+    border-top: thin solid var(--graphics-30);
+
+    &.surface {
+      margin-top: 1.875rem;
+      padding: 2rem 1.5rem;
+      background-color: var(--background);
+      border: thin solid var(--graphics-30);
+      border-radius: 1rem;
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .mir-cabinet-actions {
+    grid-area: actions;
+    align-self: center;
+    display: flex;
+    flex-direction: row-reverse;
+
+    > :not(:last-child) {
+      margin-left: 0.75rem;
+    }
+  }
+}

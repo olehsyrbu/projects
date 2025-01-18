@@ -1,0 +1,42 @@
+.myResources {
+  .header-desktop {
+    display: flex;
+
+    .header-actions {
+      margin-left: auto;
+    }
+  }
+
+  .header-mobile {
+    margin: 1.25rem;
+  }
+
+  .subHeader {
+    font-size: 1.5rem;
+    line-height: 150%;
+    margin-bottom: 0.875rem;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 3.75rem;
+      }
+    }
+  }
+
+  h3 {
+    font-family: var(--font-sans);
+  }
+
+  @media screen and (max-width: 860px) {
+    .subHeader {
+      margin-left: 1.25rem;
+    }
+  }
+}

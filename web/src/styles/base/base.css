@@ -1,0 +1,295 @@
+:root {
+  --font-sans: 'Roboto', sans-serif;
+  --font-serif: 'Libre Baskerville', serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--p-100);
+}
+
+a:hover {
+  color: var(--p-120);
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+[data-organization='bcbsks'] button {
+  border-radius: 0 !important;
+}
+
+.page-container {
+  h1 {
+    font-size: 2rem !important;
+    font-weight: 500;
+    margin-top: 2.125rem;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 1.5rem;
+    }
+
+    @media screen and (max-width: 467px) {
+      display: none;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color: var(--text-heading);
+    letter-spacing: -0.0125rem;
+  }
+}
+
+.mir-dialog-buttons {
+  button {
+    margin-right: 10px;
+    padding: 0 20px;
+  }
+}
+
+.mir-badge-label-text-dash {
+  font-size: 12px;
+  font-weight: 300;
+
+  .mir-badge {
+    margin-right: 0;
+  }
+
+  &::after {
+    color: #7b97bc;
+    padding-left: 8px;
+    padding-right: 8px;
+    content: '|';
+  }
+}
+
+.mir-badge-label-text-dash:last-child {
+  &::after {
+    padding: 0;
+    content: '';
+  }
+}
+
+.mir-list-commas {
+  span {
+    &:first-child::before {
+      content: ' ';
+      white-space: pre;
+    }
+
+    &::after {
+      content: ', ';
+      white-space: pre;
+    }
+
+    &:last-child::after {
+      content: '';
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mir-dialog-buttons {
+    background-color: white;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.06);
+    padding: 16px 0;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    button {
+      margin-left: 10px;
+      padding: 0 20px;
+    }
+  }
+}
+
+/* FLEX SECTIONS */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-align-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-50 {
+  width: 50%;
+}
+
+/* MISC */
+.content {
+  margin: auto;
+  max-width: 90rem;
+}
+
+/* PANELS */
+.panel {
+  background-color: var(--background);
+  border: 0.0625rem solid #cccbca;
+  border-radius: 0.9375rem;
+  box-sizing: border-box;
+  /* needs padding / alignment */
+}
+
+/* DASHBOARDS */
+.dashboard-module {
+  background: var(--background);
+  border: 0.0625rem solid #d8d7d6;
+  box-sizing: border-box;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
+  border-radius: 0.875rem;
+}
+
+.mir-content {
+  background: var(--background);
+  padding: 40px;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+    padding: 16px 16px 0 16px;
+  }
+  @media screen and (max-width: 467px) {
+    padding: 1rem;
+  }
+}
+
+.mir-content-block {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-shadow: 0 1px 0 0 rgba(194, 207, 224, 0.7);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: 467px) {
+    padding-bottom: 24px;
+    padding-top: 16px;
+    ul {
+      padding-left: 24px;
+    }
+    &:last-child {
+      padding-bottom: 16px;
+    }
+
+    .row {
+      display: block;
+
+      .column-50 {
+        width: 100%;
+      }
+    }
+    .full-column {
+      width: 100%;
+    }
+  }
+}
+
+.mir-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &.mir-grid-columns {
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 467px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.mir-credentials-wrapper {
+  .mir-badge {
+    margin-left: -34px;
+  }
+
+  .mir-credential {
+    margin-bottom: 20px;
+    padding-left: 34px;
+  }
+}
+
+.mir-text {
+  color: var(--text-regular);
+  line-height: 1.4;
+
+  p {
+    padding-bottom: 0.5rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  font-size: 16px;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+
+  &.regular {
+    color: var(--text-regular);
+  }
+
+  &.small {
+    font-size: 12px;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+}
+
+.mir-link {
+  font-weight: 400;
+  margin: auto 0;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: var(--p-100) !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mir-transparent-button {
+  background-color: transparent;
+  border: none;
+  user-select: none;
+  padding: 0;
+}

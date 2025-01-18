@@ -1,0 +1,40 @@
+.mir-option-list {
+  margin: 0;
+  padding: 0.5rem 0;
+  overflow: auto;
+  max-height: 25rem;
+
+  .mir-option-list-item {
+    cursor: pointer;
+    padding: 0.25em 1em;
+    font-family: Roboto;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: inherit;
+
+    &:hover,
+    &[data-current-nav] {
+      background-color: #eef2f6;
+    }
+
+    &[data-reach-listbox-option] {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &[data-current-selected],
+    &[data-selected='true'] {
+      background-color: #cce2e6;
+      font-weight: normal;
+
+      svg {
+        color: #037089;
+      }
+    }
+
+    [data-suggested-value] {
+      font-weight: normal;
+    }
+  }
+}

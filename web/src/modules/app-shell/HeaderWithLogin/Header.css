@@ -1,0 +1,56 @@
+.HeaderDesktop {
+  box-sizing: content-box;
+  z-index: 19;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  align-items: center;
+}
+
+.login-modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000054;
+}
+
+.HeaderMobile {
+  color: var(--p-100);
+  display: flex;
+  align-items: center;
+  z-index: 56;
+  padding: 0 1.25rem;
+  height: 4rem;
+
+  .burger-menu {
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 24px;
+
+    .logo {
+      width: 114px;
+      height: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  [data-reach-dialog-overlay] {
+    z-index: 800 !important;
+  }
+}

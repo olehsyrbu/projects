@@ -1,0 +1,27 @@
+.huww-widget {
+  z-index: 100 !important;
+}
+
+.huww-flag-wrapper {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.huww-widget.huww-widget-bottom-left {
+  bottom: 65px !important;
+  @media screen and (max-width: 640px) {
+    bottom: 15px !important;
+  }
+}
+
+.huww-flag-wrapper {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.huww-widget.huww-widget-bottom-left {
+  bottom: 59px !important;
+  @media screen and (max-width: 640px) {
+    bottom: 13px !important;
+  }
+}

@@ -1,0 +1,10 @@
+.teamList {
+  ul {
+    list-style-type: none;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}

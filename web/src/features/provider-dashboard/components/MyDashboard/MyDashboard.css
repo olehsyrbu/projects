@@ -1,0 +1,46 @@
+#providerDashboard #myDashboard {
+  box-sizing: content-box;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & > div {
+    max-width: 100%;
+  }
+
+  .SearchBar {
+    margin-top: -6px;
+    margin-bottom: 24px;
+  }
+
+  .modules-area {
+    @media screen and (max-width: 768px) {
+      margin: auto;
+      width: min-content;
+    }
+  }
+
+  @media screen and (max-width: 467px) {
+    .right-column {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .left-column {
+    @media screen and (max-width: 359px) {
+      max-width: 320px;
+      margin: auto;
+    }
+  }
+
+  #myProfiles {
+    margin-right: 1.375rem;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
+  }
+}

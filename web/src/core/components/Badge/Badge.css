@@ -1,0 +1,83 @@
+.mir-badges-top-icons {
+  .mir-badge {
+    align-items: flex-start;
+    .mir-badge-icon {
+      padding-top: 4px;
+    }
+  }
+}
+.mir-badges {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--text-heading);
+  > span {
+    margin-top: 8px;
+  }
+}
+.mir-badge {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  &:last-child,
+  &:first-child {
+    margin-left: 0;
+  }
+
+  .mir-badge-icon {
+    display: flex;
+  }
+  svg {
+    color: var(--graphics-100);
+    margin-right: 4px;
+  }
+  &.badge-check {
+    svg {
+      color: var(--primary-variant-100);
+    }
+  }
+  &.gray-svg {
+    svg {
+      color: var(--graphics-100);
+    }
+  }
+  &.small-margin {
+    margin-right: 5px;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  .mir-badge-label-small {
+    font-size: 12px;
+  }
+
+  .mir-badge-label {
+    align-items: center;
+    font-size: inherit;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: left;
+    color: var(--text-heading);
+    font-weight: 300;
+    &.small {
+      font-size: 12px;
+    }
+    &.regular {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .mir-badges {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .mir-badge {
+    margin-right: 12px;
+  }
+}

@@ -1,0 +1,40 @@
+.SearchPreview {
+  display: flex;
+  min-width: 490px;
+  align-items: center;
+  border: thin solid var(--graphics-50);
+  border-radius: 3.125rem;
+  background-color: var(--background);
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  &:hover {
+    background-color: var(--p-10);
+  }
+
+  .field-preview {
+    flex: 1;
+    padding: 0.875rem 1.5rem;
+    font: 0.875rem/1.25rem var(--font-sans);
+    white-space: nowrap;
+    max-width: 15rem;
+    overflow: auto;
+    text-overflow: ellipsis;
+    &:not(:first-child) {
+      border-left: thin solid var(--graphics-50);
+    }
+  }
+
+  svg {
+    margin-left: auto;
+    margin-right: 1rem;
+    color: var(--p-100);
+  }
+}
+
+[data-organization='bcbsks'] {
+  .SearchPreview {
+    border-radius: 0;
+  }
+}

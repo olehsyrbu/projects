@@ -1,0 +1,149 @@
+.ErrorPage {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--surface);
+  overflow: hidden;
+  z-index: 1;
+
+  /* Special case for iOS (https://bugs.webkit.org/show_bug.cgi?id=141832) */
+  @supports (-webkit-touch-callout: none) {
+    & {
+      min-height: -webkit-fill-available;
+    }
+  }
+
+  /* Special case for IE11 (https://web.archive.org/web/20170312223506/https://connect.microsoft.com/IE/feedback/details/802625/min-height-and-flexbox-flex-direction-column-dont-work-together-in-ie-10-11-preview) */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    & {
+      height: 1px;
+    }
+  }
+
+  header {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  &__container {
+    width: 534px;
+    align-self: center;
+    position: relative;
+    margin: auto 1.125rem;
+    padding: 2rem;
+    background-color: var(--background);
+    border: thin solid var(--graphics-30);
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0.4375rem 1.25rem rgba(0, 0, 0, 0.06);
+
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      z-index: -1;
+    }
+  }
+
+  h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-family: Libre Baskerville;
+    font-size: 32px;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  a {
+    font-weight: bold;
+    color: var(--p-100);
+    text-decoration: none;
+  }
+
+  @media (max-width: 639px) {
+    header {
+      justify-content: center;
+      height: 64px;
+    }
+
+    &__container {
+      box-sizing: border-box;
+      margin: auto 1.125rem;
+      padding-bottom: 1.125rem;
+      max-width: 20.125rem;
+
+      &:before {
+        top: -88px;
+        left: 50%;
+        width: 351px;
+        height: 248px;
+        background: url('@/images/not-found-decoration-mobile.svg') no-repeat;
+        transform: translateX(-50%);
+      }
+    }
+
+    h1 {
+      font-family: var(--font-sans);
+      font-size: 1.25rem;
+      line-height: 1.5;
+
+      .status-code {
+        font-family: var(--font-serif);
+        font-size: 2.5rem;
+        line-height: 1.5;
+      }
+    }
+
+    p br {
+      display: none;
+    }
+  }
+
+  @media (min-width: 640px) {
+    padding-bottom: 5rem;
+
+    header {
+      height: 5rem;
+    }
+
+    &__container {
+      padding: 4.125rem 5.875rem;
+
+      &:before {
+        top: -28px;
+        left: -202px;
+        width: 410px;
+        height: 376px;
+        background: url('@/images/not-found-decoration-1.svg') no-repeat;
+      }
+
+      &:after {
+        top: -24px;
+        right: -161px;
+        width: 429px;
+        height: 347px;
+        background: url('@/images/not-found-decoration-2.svg') no-repeat;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.4;
+
+      .status-code {
+        font-size: 3.5rem;
+        line-height: 1.2;
+      }
+    }
+  }
+}

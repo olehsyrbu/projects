@@ -1,0 +1,35 @@
+#dialogBox {
+  .referral-list-note-dialog {
+    textarea {
+      padding: 8px 12px;
+      width: 100%;
+      min-height: 60px;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      background: white;
+      border: 0.0625rem solid #9aafcb;
+    }
+    .max-character-info {
+      font-family: Roboto;
+      font-size: 12px;
+      line-height: 120%;
+      color: #808080;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .modal {
+      height: 100%;
+    }
+    .referral-list-note-dialog {
+      textarea {
+        height: 200px;
+      }
+      .mir-dialog-buttons {
+        bottom: 43%;
+      }
+    }
+  }
+}

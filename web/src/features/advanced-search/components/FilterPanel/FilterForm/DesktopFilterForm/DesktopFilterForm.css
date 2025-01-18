@@ -1,0 +1,21 @@
+.filter-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 10px;
+
+  .chipBoxWithTooltip {
+    margin-right: 10px;
+  }
+  .clear-button {
+    cursor: pointer;
+
+    font-family: Roboto, serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: var(--p-100);
+  }
+}

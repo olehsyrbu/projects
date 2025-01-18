@@ -1,0 +1,55 @@
+:root {
+  --n-5: #fbfbfb;
+  --n-10: #f6f6f6;
+  --n-20: #eeeeee;
+  --n-40: #e3e3e3;
+  --n-50: #cacaca;
+  --n-75: #bdbdbd;
+  --n-85: #a5a5a5;
+  --n-100: #8b8b8b;
+  --n-120: #5a5a5a;
+  --n-140: #414141;
+
+  --p-5: #f2f8f9;
+  --p-10: #e5f1f3;
+  --p-20: #cce2e7;
+  --p-40: #99c6d0;
+  --p-55: #73b0be;
+  --p-75: #4094a7;
+  --p-100: #007089;
+  --p-120: #005a6e;
+  --p-140: #004454;
+  --p-160: #002d37;
+
+  --chip: #ebfce7;
+  --banner-get-matched: #02a3ab;
+  --banner-emergency: #dfebea;
+
+  --primary-variant-50: #8fd1d4;
+  --primary-variant-75: #57babf;
+  --primary-variant-100: #1fa3aa;
+
+  --background: #fff;
+  --surface: #f8f7f4;
+  --highlight: #f2f8f9;
+
+  --text-regular: #292929;
+  --text-heading: #203b4b;
+  --text-hint: #757575;
+  --text-inverted: #fff;
+
+  --graphics-10: #f2f5f8;
+  --graphics-20: #eef2f6;
+  --graphics-30: #d7e0eb;
+  --graphics-50: #bdcbde;
+  --graphics-70: #9aafcb;
+  --graphics-100: #7b97bc;
+
+  --favorites: #ee6b63;
+
+  --error-1: #c12300;
+  --error-2: #ee6b63;
+  --warning-1: #ce7c00;
+  --warning-2: #f5ab00;
+  --warning-3: #ffebcc;
+}

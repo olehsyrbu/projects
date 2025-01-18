@@ -1,0 +1,142 @@
+#mobileNavbar {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  background: var(--background);
+  transition: height 0.3s ease-in-out;
+  height: 4rem;
+  width: 100%;
+  z-index: 50;
+
+  .navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+
+    button#hamburger {
+      position: absolute;
+      border: none;
+      background: transparent;
+      left: 1.125rem;
+      width: 2rem;
+      height: 2rem;
+
+      img#closeIcon {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+
+    span {
+      font-size: 1.5rem;
+      z-index: 50;
+    }
+  }
+
+  &.active {
+    height: 100vh;
+  }
+
+  #navMenu {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--background);
+    width: 100%;
+    height: 100%;
+
+    #navLinks {
+      margin-top: 8.25rem;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin-bottom: 1.5rem;
+          text-align: center;
+
+          a {
+            font-size: 1rem;
+            line-height: 140%;
+            color: var(--p-100);
+            text-decoration: none;
+          }
+
+          .active {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .nav-menu-footer {
+      margin-top: auto;
+      width: 100%;
+
+      .provider-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+
+        span {
+          width: max-content;
+
+          &.name {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #454545;
+            line-height: 150%;
+            margin-bottom: 0.25rem;
+          }
+
+          &.email {
+            font-size: 0.875rem;
+            color: #808080;
+            line-height: 1.25rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        line-height: 140%;
+        margin: auto;
+        margin-bottom: 2rem;
+        width: 12.5rem;
+        max-width: 100%;
+
+        a {
+          font-size: 1rem;
+          font-weight: 500;
+          color: var(--p-100);
+          font-weight: 500;
+          text-decoration: none;
+
+          &:first-child {
+            margin-right: 1.875rem;
+          }
+        }
+      }
+
+      .mir-button.text {
+        padding: 0;
+        height: auto;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
+}

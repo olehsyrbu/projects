@@ -1,0 +1,33 @@
+.GroupPracticeAdmin {
+  h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  h2 + p {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+  }
+
+  :global(.actions) {
+    display: flex;
+
+    :global(.mir-button) {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  .resultList {
+    padding: 0;
+    list-style: none;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+}

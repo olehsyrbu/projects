@@ -1,0 +1,140 @@
+.identity-preferences {
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .dropdown-multiselect,
+  .checkbox {
+    margin-bottom: 24px;
+  }
+
+  .dropdown-items,
+  .multiselect-items {
+    max-height: 100px !important;
+    max-width: 99%;
+
+    &:last-child {
+      max-height: 120px !important;
+    }
+  }
+
+  .language-controller {
+    .multiselect-items {
+      max-height: 120px !important;
+    }
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .chip-checkbox {
+    max-width: 250px;
+    margin-bottom: 16px;
+  }
+
+  .dropdown-container {
+    width: 210px;
+  }
+
+  .checkbox-tooltip-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+
+    .checkbox {
+      .checkbox-button {
+        border: 2px solid var(--p-100);
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+    }
+
+    .info {
+      width: min-content;
+      height: min-content;
+      position: relative;
+      padding: 6px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 0 10px;
+
+      svg {
+        fill: var(--p-100);
+      }
+
+      .info-tooltip {
+        opacity: 0;
+        position: absolute;
+        top: 32px;
+        border-radius: 8px;
+        background: var(--background);
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.18));
+        min-width: 220px;
+        transition-duration: 0.3s;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        padding: 0;
+
+        font-family: Roboto, serif;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: var(--text-regular);
+        z-index: 1;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        .info-tooltip {
+          opacity: 1;
+          padding: 10px;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .preferred-time {
+    margin-top: 24px;
+    font-family: Roboto, serif;
+
+    .preferred-time-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--text-heading);
+      margin: 0;
+    }
+
+    .preferred-time-text {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+      color: var(--text-regular);
+      margin: 12px 0;
+    }
+
+    .weekdays-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .chip-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
